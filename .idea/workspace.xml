@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="error" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="" />
+        <option name="name" value="eee" />
+        <option name="packageNameIsRegex" value="false" />
+        <option name="packageNamePattern" value="com.kelvinwachiye.kotlin.moviedb" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value=" D/" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="gitignore" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
+        <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1ha5nFuj67G70xziVAz3AhcqHLe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Gradle/gradle-6.6/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-alpha06/18e9deecb147fc3436421f7d77e65f0cf39a1a17/recyclerview-1.2.0-alpha06-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-previewC:/Gradle/gradle-6.6/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-alpha06/18e9deecb147fc3436421f7d77e65f0cf39a1a17/recyclerview-1.2.0-alpha06-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movielist" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\moviedetails" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\showdetails" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movie" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kelvinwachiye.kotlin.moviedb.ui" />
+      <recent name="com.kelvinwachiye.kotlin.moviedb" />
+      <recent name="com.kelvinwachiye.kotlin.movies.movies" />
+      <recent name="com.kelvinwachiye.kotlin.movies.shows" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.kelvinwachiye.kotlin.moviedb.ui.notifications" />
+      <recent name="com.kelvinwachiye.kotlin.moviedb.ui.movielist" />
+      <recent name="com.kelvinwachiye.kotlin.moviedb.ui.show" />
+      <recent name="com.kelvinwachiye.kotlin.moviedb.ui.showdetails" />
+      <recent name="com.kelvinwachiye.kotlin.moviedb" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.kelvinwachiye.kotlin.movies.ui.details" />
+      <recent name="com.kelvinwachiye.kotlin.movies.ui.shows" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res\layout" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\movies\ui" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res\drawable" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\movies\network" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="NullSkipperTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movies.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kelvinwachiye.kotlin.moviedb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kelvinwachiye.kotlin.moviedb" />
+      <option name="MAIN_CLASS_NAME" value="com.kelvinwachiye.kotlin.moviedb.NullSkipperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Movies.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Movies [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="API_KEY" value="&quot;b45a182d55eff71ad023468cb69d2ea5&quot;" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Android JUnit.NullSkipperTest" />
+      <item itemvalue="Gradle.Movies [clean]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Movies [clean]" />
+        <item itemvalue="Android JUnit.NullSkipperTest" />
+        <item itemvalue="Gradle.Movies [clean]" />
+        <item itemvalue="Android JUnit.NullSkipperTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="" />
+      <created>1600236527648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600236527648</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1601198454687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601198454687</updated>
+    </task>
+    <task id="LOCAL-00002" summary="optimization">
+      <created>1604044389630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604044389630</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="200" y="116" key="#PSD" timestamp="1601206053695">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="200" y="116" key="#PSD/0.0.1366.768@0.0.1366.768" timestamp="1601206053695" />
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606558199164">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1606558199164" />
+    <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1604682283562">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1604682283562" />
+    <state x="412" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606556301182">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="412" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1606556301182" />
+    <state x="292" y="308" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606554022295">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="292" y="308" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.768@0.0.1366.768" timestamp="1606554022295" />
+    <state x="479" y="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1606553965473">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="479" y="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.768@0.0.1366.768" timestamp="1606553965473" />
+    <state x="343" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603967299993">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="343" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603967299993" />
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603970216510">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1603970216510" />
+    <state x="462" y="175" width="520" height="441" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1606554223611">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="462" y="175" width="520" height="441" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1606554223611" />
+    <state x="263" y="139" key="AndroidCreateResourceFileDialog" timestamp="1606558372542">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="263" y="139" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1606558372542" />
+    <state x="527" y="174" key="AndroidCreateXmlResourceDialog" timestamp="1606558537945">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="527" y="174" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1606558537945" />
+    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1604044381698">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1604044381698" />
+    <state x="550" y="134" key="EnvironmentVariablesDialog" timestamp="1606558194390">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="550" y="134" key="EnvironmentVariablesDialog/0.0.1366.768@0.0.1366.768" timestamp="1606558194390" />
+    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1606574571881">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606574571881" />
+    <state width="197" height="266" key="Git.Branch.Popup" timestamp="1606574083608">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="197" height="266" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1606574083608" />
+    <state width="1306" height="412" key="GridCell.Tab.0.bottom" timestamp="1604692643198">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="412" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1604692643198" />
+    <state width="1306" height="412" key="GridCell.Tab.0.center" timestamp="1604692643198">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="412" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1604692643198" />
+    <state width="1306" height="412" key="GridCell.Tab.0.left" timestamp="1604692643198">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="412" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1604692643198" />
+    <state width="1306" height="412" key="GridCell.Tab.0.right" timestamp="1604692643198">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1306" height="412" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1604692643198" />
+    <state x="184" y="29" key="SettingsEditor" timestamp="1606574549747">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606574549747" />
+    <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1600416150138">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="499" y="162" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1600416150138" />
+    <state x="482" y="118" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606574108067">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="482" y="118" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.768@0.0.1366.768" timestamp="1606574108067" />
+    <state x="492" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606573825027">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="492" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1606573825027" />
+    <state x="391" y="228" key="edit.logcat.filter.dialog.dimensions" timestamp="1604691607041">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="391" y="228" key="edit.logcat.filter.dialog.dimensions/0.0.1366.768@0.0.1366.768" timestamp="1604691607041" />
+    <state x="453" y="97" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604044907713">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="453" y="97" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1604044907713" />
+    <state x="424" y="26" key="refactoring.ChangeSignatureDialog" timestamp="1604042581226">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="424" y="26" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1604042581226" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1601198485547">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1601198485547" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603970519626">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1603970519626" />
+  </component>
+</project>
