@@ -36,7 +36,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="gitignore" />
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="gitignore">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/MovieApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/utils/DefaultIfNullFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/utils/EntityMapper.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +86,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1ha5nFuj67G70xziVAz3AhcqHLe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -95,7 +98,6 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-viewC:/Gradle/gradle-6.6/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-alpha06/18e9deecb147fc3436421f7d77e65f0cf39a1a17/recyclerview-1.2.0-alpha06-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -283,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604044389630</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gitignore">
+      <created>1606575109410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606575109410</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +316,8 @@
     </ignored-roots>
     <MESSAGE value="Initial commit" />
     <MESSAGE value="optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="200" y="116" key="#PSD" timestamp="1601206053695">
@@ -366,10 +376,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606574571881" />
-    <state width="197" height="266" key="Git.Branch.Popup" timestamp="1606574083608">
+    <state width="199" height="268" key="Git.Branch.Popup" timestamp="1606574612617">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="197" height="266" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1606574083608" />
+    <state width="199" height="268" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1606574612617" />
     <state width="1306" height="412" key="GridCell.Tab.0.bottom" timestamp="1604692643198">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -394,14 +404,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="499" y="162" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1600416150138" />
-    <state x="482" y="118" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606574108067">
+    <state x="482" y="118" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1606575098995">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="482" y="118" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.768@0.0.1366.768" timestamp="1606574108067" />
-    <state x="492" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606573825027">
+    <state x="482" y="118" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.768@0.0.1366.768" timestamp="1606575098995" />
+    <state x="492" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606574616826">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="492" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1606573825027" />
+    <state x="492" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1606574616826" />
     <state x="391" y="228" key="edit.logcat.filter.dialog.dimensions" timestamp="1604691607041">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -414,10 +424,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="424" y="26" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1604042581226" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1601198485547">
+    <state x="339" y="172" key="run.anything.popup" timestamp="1606574600923">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1601198485547" />
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1606574600923" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603970519626">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

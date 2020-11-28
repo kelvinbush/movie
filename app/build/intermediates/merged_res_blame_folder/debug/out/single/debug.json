@@ -1,0 +1,310 @@
+[
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_movie.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_movie.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_star.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_top.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_money.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_money.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_show.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_show.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_movie_loadstate_footer.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\movie_loadstate_footer.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_broken_image.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_broken_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_details.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\fragment_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_money.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_money.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_author.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_author.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_show_list.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\fragment_show_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_btn.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_btn.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_btn.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_btn.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_money.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_money.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_show_details.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\fragment_show_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_show.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_show.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_movie.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loading_animation.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\loading_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_grid_item_show.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\grid_item_show.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_author.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_author.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_author.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_author.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_btn.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_btn.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_author.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_author.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_connection_error.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_connection_error.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_movie.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_movie.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_movie.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\menu\\menu_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_btn.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_btn.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_bottom.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_search.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loading_img.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\loading_img.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_author.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_author.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_money.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_money.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_show.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_show.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_movie.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_movie.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_star.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_show.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_show.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_star.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_show.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-hdpi\\ic_show.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_star.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_star.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_star.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_star.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_movie_list.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\fragment_movie_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_money.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_money.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\layout_grid_item_movie.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\layout\\grid_item_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_top.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_btn.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-anydpi\\ic_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_search.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_movie.png.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\drawable-xhdpi\\ic_movie.png"
+    },
+    {
+        "merged": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out_bottom.xml.flat",
+        "source": "C:\\Users\\kelvin\\Desktop\\Movies\\app\\src\\main\\res\\anim\\slide_out_bottom.xml"
+    }
+]

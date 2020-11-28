@@ -1,0 +1,45 @@
+package com.kelvinwachiye.kotlin.moviedb.api
+
+import com.kelvinwachiye.kotlin.moviedb.domains.Show
+import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
+import com.kelvinwachiye.kotlin.moviedb.domains.network.NetworkMovieResultContainer
+import com.kelvinwachiye.kotlin.moviedb.domains.network.NetworkTvShowContainer
+import retrofit2.http.GET
+import retrofit2.http.Path
+import retrofit2.http.Query
+
+
+interface MovieDbAPi {
+    companion object {
+        const val MOVIE_BASE_URL = "https://api.themoviedb.org/3/"
+    }
+
+    @GET("movie/{query}")
+    suspend fun getMoviesAsync(
+        @Path("query") query: String,
+        @Query("api_key") key: String,
+        @Query("page") page: Int
+    ):
+            NetworkMovieResultContainer
+
+
+    @GET("tv/{query}")
+    suspend fun getTvShowsAsync(
+        @Path("query") query: String,
+        @Query("api_key") key: String,
+        @Query("page") page: Int
+    ):
+            NetworkTvShowContainer
+
+    @GET("movie/{id}")
+    suspend fun getMovieDetails(
+        @Path("id") id: String,
+        @Query("api_key") key: String
+    ): NetWorkMovieDetails
+
+    @GET("tv/{id}")
+    suspend fun getTvShowDetails(
+        @Path("id") id: String,
+        @Query("api_key") key: String
+    ): Show
+}

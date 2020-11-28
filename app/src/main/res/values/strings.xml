@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="title_detail">Detail</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_movie_list">Movie List</string>
+    <string name="error_loading_results">Error Loading Results</string>
+    <string name="retry">Retry</string>
+    <string name="search">Search</string>
+    <string name="results_could_not_be_loaded">Results could not be loaded</string>
+    <string name="retry2">Retry</string>
+    <string name="no_results_found_for_this_query">No results found for this query</string>
+    <string name="they_rated">They rated</string>
+    <string name="cast_amp_crew"><![CDATA[Cast & Crew]]></string>
+    <string name="rate_this">Rate This</string>
+    <string name="plot_summary">Plot Summary</string>
+    <string name="reviews">Reviews</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="eng">English</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_movie_list">
+
+    <fragment
+        android:id="@+id/navigation_movie_list"
+        android:name="com.kelvinwachiye.kotlin.moviedb.ui.movielist.MovieListFragment"
+        android:label="@string/title_movie_list"
+        tools:layout="@layout/fragment_movie_list" >
+        <action
+            android:id="@+id/action_navigation_movie_list_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_bottom"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.kelvinwachiye.kotlin.moviedb.ui.moviedetails.MovieDetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/action_detailsFragment_to_navigation_movie_list"
+            app:destination="@id/navigation_movie_list"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation_movie_list"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="movie"
+            app:argType="com.kelvinwachiye.kotlin.moviedb.domains.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_tv_show_fragment"
+        android:name="com.kelvinwachiye.kotlin.moviedb.ui.showslist.TvShowsFragment"
+        android:label="TvShows"
+        tools:layout="@layout/fragment_show_list" >
+        <action
+            android:id="@+id/action_navigation_tv_show_fragment_to_showDetailsFragment"
+            app:destination="@id/showDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.kelvinwachiye.kotlin.moviedb.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/showDetailsFragment"
+        android:name="com.kelvinwachiye.kotlin.moviedb.ui.showdetails.ShowDetailsFragment"
+        android:label="Show" >
+        <argument
+            android:name="tvShow"
+            app:argType="com.kelvinwachiye.kotlin.moviedb.domains.TvShow" />
+    </fragment>
+</navigation>
