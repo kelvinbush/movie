@@ -12,11 +12,11 @@ import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kelvinwachiye.kotlin.moviedb.R
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentDetailsBinding
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 import dagger.hilt.android.AndroidEntryPoint
 
-private const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w185/"
 private const val TAG = "MovieDetailsFragment"
 
 @AndroidEntryPoint
@@ -52,14 +52,14 @@ class MovieDetailsFragment : Fragment() {
         binding.tvPlot.text = movie.overview
         binding.date.text = movie.date
         Glide.with(requireContext())
-            .load(IMAGE_BASE_URL + movie.imageSrcUrl)
+            .load(MyConstants.IMAGE_BASE_URL + movie.imageSrcUrl)
             .centerCrop()
             .transition(DrawableTransitionOptions.withCrossFade())
             .error(R.drawable.ic_broken_image)
             .into(binding.backdrop)
 
         viewModel.details.observe(viewLifecycleOwner) {
-            if (it.language == "en") {
+            if (it.language == MyConstants.ENGLISH) {
                 binding.tvLanguage.text = getString(R.string.eng)
             } else {
                 binding.tvLanguage.text = it.language

@@ -1,6 +1,7 @@
 package com.kelvinwachiye.kotlin.moviedb.di
 
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.utils.DefaultIfNullFactory
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -31,7 +32,7 @@ object AppModule {
     fun provideRetrofit(moshi: Moshi): Retrofit =
         Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create(moshi))
-            .baseUrl(MovieDbAPi.MOVIE_BASE_URL)
+            .baseUrl(MyConstants.MOVIE_BASE_URL)
             .build()
 
     @Provides
