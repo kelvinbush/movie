@@ -34,10 +34,13 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
     }
 
     private fun displayShow() {
-        var content: String = ""
+        var content = ""
         viewModel.show.observe(viewLifecycleOwner) {
-            //            content += "last_air_date: " + it.last_air_date + "\n"
-            //            content += "last_episode_to_air: " + it.last_episode_to_air.name + "\n"
+            content += "last_air_date: " + it.last_air_date + "\n"
+            content += "last_episode_to_air: " + it.last_episode_to_air!!.name + "\n"
+            content += "overview: " + it.overview + "\n"
+            content += "seasons: " + it.seasons.toString() + "\n"
+            content += "status: " + it.status + "\n"
             content += "Season 1: " + it.seasons!![0].overview
             binding.tvMain.text = content
         }
