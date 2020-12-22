@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kelvinwachiye.kotlin.moviedb.R
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.databinding.GridItemMovieBinding
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 
-private const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w185/"
 
 class MoviesAdapter(private val listener: OnItemClickListener) :
     PagingDataAdapter<Movie, MoviesAdapter.MovieViewHolder>(
@@ -51,7 +51,7 @@ class MoviesAdapter(private val listener: OnItemClickListener) :
         fun bind(movie: Movie) {
             binding.apply {
                 Glide.with(itemView)
-                    .load(IMAGE_BASE_URL + movie.imageSrcUrl)
+                    .load(MyConstants.IMAGE_BASE_URL + movie.imageSrcUrl)
                     .centerCrop()
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .error(R.drawable.ic_broken_image)

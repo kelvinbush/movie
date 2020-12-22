@@ -1,5 +1,6 @@
 package com.kelvinwachiye.kotlin.moviedb.api
 
+import com.kelvinwachiye.kotlin.moviedb.domains.Credits
 import com.kelvinwachiye.kotlin.moviedb.domains.Show
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetworkMovieResultContainer
@@ -42,4 +43,10 @@ interface MovieDbAPi {
         @Path("id") id: String,
         @Query("api_key") key: String
     ): Show
+
+    @GET("tv/{id}/credits")
+    suspend fun getCredits(
+        @Path("id") id: String,
+        @Query("api_key") key: String
+    ): Credits
 }

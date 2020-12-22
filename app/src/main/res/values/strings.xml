@@ -16,4 +16,8 @@
     <string name="reviews">Reviews</string>
     <string name="title_notifications">Notifications</string>
     <string name="eng">English</string>
+    <string name="my_list">My List</string>
+    <string name="rate">Rate</string>
+    <string name="share">Share</string>
+    <string name="seasons">\" seasons\"</string>
 </resources>
