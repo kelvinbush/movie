@@ -6,5 +6,6 @@ class MyConstants {
         const val ENGLISH = "en"
         const val MOVIE = "movie"
         const val MOVIE_BASE_URL = "https://api.themoviedb.org/3/"
+        const val NOT_AVAILABLE = "Not Available"
     }
 }
