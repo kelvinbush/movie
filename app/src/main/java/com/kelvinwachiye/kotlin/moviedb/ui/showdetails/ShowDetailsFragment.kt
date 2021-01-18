@@ -5,14 +5,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL
@@ -24,8 +22,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 @AndroidEntryPoint
-class ShowDetailsFragment : Fragment(R.layout.fragment_details),
-    AdapterView.OnItemSelectedListener {
+class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
 
     private val viewModel by viewModels<ShowDetailsViewModel>()
     private var _binding: FragmentShowDetailsBinding? = null
@@ -72,11 +69,15 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
             }
 
         })
+
         val arrayAdapter =
             ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, spinnerItems)
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = arrayAdapter
-        spinner.onItemSelectedListener = this
+        spinner.setOnItemClickListener { parent, view, position, id ->
+            val data: String = spinner.getItemAtPosition(position).toString()
+            Toast.makeText(requireContext(), data, Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun glideAdapter(imageUrl: String?, view: ImageView) {
@@ -192,12 +193,4 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
         _binding = null
     }
 
-    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val text = parent?.getItemAtPosition(position).toString() + "selected"
-        Toast.makeText(parent?.context, "text", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onNothingSelected(parent: AdapterView<*>?) {
-        TODO("Not yet implemented")
-    }
 }
