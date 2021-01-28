@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E5E5E5">
 
-    <androidx.core.widget.NestedScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -388,7 +388,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </androidx.core.widget.NestedScrollView>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
