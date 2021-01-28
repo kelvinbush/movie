@@ -8,7 +8,7 @@ data class Show(
     val genres: List<Genres>?,
     val last_air_date: String?,
     val number_of_episodes: String?,
-    val number_of_seasons: String?,
+    val number_of_seasons: Int?,
     val networks: List<Networks>?,
     val seasons: List<Seasons>?,
     val next_episode_to_air: NextEpisode?,
@@ -16,7 +16,10 @@ data class Show(
     val overview: String?,
     val original_language: String?,
     val vote_average: String?,
-    val status: String?
+    val status: String?,
+    val name: String?,
+    val backdrop_path: String?,
+    val poster_path: String?
 
 )
 
@@ -59,4 +62,24 @@ data class NextEpisode(
     val overview: String?,
     val season_number: Int?,
     val still_path: String?
+)
+
+@DefaultIfNull
+data class Cast(
+    val original_name: String?,
+    val character: String?,
+    val profile_path: String?
+)
+
+@DefaultIfNull
+data class Crew(
+    val original_name: String?,
+    val profile_path: String?,
+    val job: String?
+)
+
+@DefaultIfNull
+data class Credits(
+    val cast: List<Cast>?,
+    val crew: List<Crew>?
 )

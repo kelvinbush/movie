@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kelvinwachiye.kotlin.moviedb.R
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.databinding.GridItemMovieBinding
 import com.kelvinwachiye.kotlin.moviedb.domains.TvShow
 
-private const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w185/"
 
 class ShowsAdapter(private val listener: OnItemClickListener) :
     PagingDataAdapter<TvShow, ShowsAdapter.ShowsViewHolder>(
@@ -51,7 +51,7 @@ class ShowsAdapter(private val listener: OnItemClickListener) :
         fun bind(show: TvShow) {
             binding.apply {
                 Glide.with(itemView)
-                    .load(IMAGE_BASE_URL + show.poster)
+                    .load(MyConstants.IMAGE_BASE_URL + show.poster)
                     .centerCrop()
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .error(R.drawable.ic_broken_image)

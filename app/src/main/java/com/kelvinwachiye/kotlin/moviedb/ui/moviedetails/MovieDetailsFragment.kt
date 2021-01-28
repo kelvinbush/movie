@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.observe
+import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
+import androidx.navigation.ui.AppBarConfiguration
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kelvinwachiye.kotlin.moviedb.R
@@ -58,14 +59,14 @@ class MovieDetailsFragment : Fragment() {
             .error(R.drawable.ic_broken_image)
             .into(binding.backdrop)
 
-        viewModel.details.observe(viewLifecycleOwner) {
+        viewModel.details.observe(viewLifecycleOwner, {
             if (it.language == MyConstants.ENGLISH) {
                 binding.tvLanguage.text = getString(R.string.eng)
             } else {
                 binding.tvLanguage.text = it.language
                 Log.d(TAG, "displayMovieDetails: ${it.language}")
             }
-        }
+        })
 
     }
 
