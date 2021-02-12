@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
@@ -30,6 +31,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     private var _binding: FragmentShowDetailsBinding? = null
     private val binding get() = _binding!!
     private var arrayAdapter: ArrayAdapter<String>? = null
+    private val allSeasons = arrayListOf<String>()
 
 
     override fun onCreateView(
@@ -45,23 +47,11 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
         return binding.root
     }
 
-
-    private val spinnerList: ArrayList<String>
-        get() {
-            return arrayListOf()
-        }
-
     private fun displayShow() {
         val spinner = binding.spinner
         spinner.onItemSelectedListener = this
-        var content = ""
-        val spinnerItems = spinnerList
         viewModel.show.observe(viewLifecycleOwner, {
-            val seasons = it.number_of_seasons
-            for (i in 1..seasons!!) {
-                content = "Season $i"
-                spinnerItems.add(content)
-            }
+            for (i in 1..it.number_of_seasons!!) allSeasons.add("Season $i")
             binding.apply {
                 tvTitle.text = it.name
                 tvPlot.text = it.overview
@@ -76,13 +66,11 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
 
         })
         val noOfSeasons = arrayOf("Season 1", "Season 2", "Season 3")
-        val no = spinnerList.size
 
         arrayAdapter =
-            ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, )
+            ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, allSeasons)
         spinner.adapter = arrayAdapter
-
-        Log.d( "displayShow: ", spinnerItems.toString())
+        Log.d("displayShow: ", allSeasons.toString())
 
     }
 
@@ -92,6 +80,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
             .error(R.drawable.ic_broken_image)
             .into(view)
     }
+
     private fun glideAdapter2(imageUrl: String?, view: ImageView) {
         Glide.with(requireContext())
             .load(IMAGE_BASE_URL_DETAIL + imageUrl)
@@ -207,6 +196,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         val selected = parent?.selectedItem.toString()
+        Toast.makeText(requireContext(), selected, Toast.LENGTH_SHORT).show()
 
     }
 
