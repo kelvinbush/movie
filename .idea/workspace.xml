@@ -36,7 +36,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="polishing the ui">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="change image configuration">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -47,14 +47,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/constants/MyConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/constants/MyConstants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/domains/TvShow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/domains/TvShow.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608635353587</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change image configuration">
+      <created>1613151573244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613151573245</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,7 +404,8 @@
     <MESSAGE value="polishing" />
     <MESSAGE value="show details adding features" />
     <MESSAGE value="polishing the ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="polishing the ui" />
+    <MESSAGE value="change image configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="change image configuration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606558199164">
@@ -425,14 +428,6 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="479" y="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.768@0.0.1366.768" timestamp="1606553965473" />
-    <state x="343" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603967299993">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="343" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768@0.0.1366.768" timestamp="1603967299993" />
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603970216510">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1603970216510" />
     <state x="462" y="175" width="520" height="441" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1606554223611">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -449,10 +444,6 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="527" y="174" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1608627249574" />
-    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1604044381698">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1604044381698" />
     <state x="550" y="134" key="EnvironmentVariablesDialog" timestamp="1606558194390">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -461,10 +452,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1608626189573" />
-    <state width="221" height="290" key="Git.Branch.Popup" timestamp="1608635372696">
+    <state width="223" height="292" key="Git.Branch.Popup" timestamp="1613151581956">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="221" height="290" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1608635372696" />
+    <state width="223" height="292" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1613151581956" />
     <state width="1323" height="87" key="GridCell.Tab.0.bottom" timestamp="1612529297815">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -485,10 +476,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="29" width="1176" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1612427095303" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1608635375674">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1613151589317">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1608635375674" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1613151589317" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1608454056362">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -505,14 +496,6 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="391" y="228" key="edit.logcat.filter.dialog.dimensions/0.0.1366.768@0.0.1366.768" timestamp="1604691607041" />
-    <state x="453" y="97" key="git4idea.branch.GitSmartOperationDialog" timestamp="1604044907713">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="453" y="97" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1604044907713" />
-    <state x="424" y="26" key="refactoring.ChangeSignatureDialog" timestamp="1604042581226">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="424" y="26" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1604042581226" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1612528644426">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

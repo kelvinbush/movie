@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL_DETAIL
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentShowDetailsBinding
 import com.kelvinwachiye.kotlin.moviedb.domains.Cast
 import com.kelvinwachiye.kotlin.moviedb.domains.Crew
@@ -67,7 +68,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 tvDate.text = getDate(it.first_air_date!!)
                 tvRating.text = it.vote_average
                 tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
-                glideAdapter(it.backdrop_path, backdrop)
+                glideAdapter2(it.backdrop_path, backdrop)
                 glideAdapter(it.poster_path, poster)
                 showCredits()
 
@@ -88,6 +89,12 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     private fun glideAdapter(imageUrl: String?, view: ImageView) {
         Glide.with(requireContext())
             .load(IMAGE_BASE_URL + imageUrl)
+            .error(R.drawable.ic_broken_image)
+            .into(view)
+    }
+    private fun glideAdapter2(imageUrl: String?, view: ImageView) {
+        Glide.with(requireContext())
+            .load(IMAGE_BASE_URL_DETAIL + imageUrl)
             .error(R.drawable.ic_broken_image)
             .into(view)
     }
