@@ -11,6 +11,5 @@ data class TvShow(
     val overview: String?,
     val poster: String?,
     val date: String?,
-    val rating: String?,
-
-    ) : Parcelable
+    val rating: String?
+) : Parcelable

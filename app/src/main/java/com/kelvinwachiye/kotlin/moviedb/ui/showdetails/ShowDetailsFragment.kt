@@ -5,9 +5,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
@@ -22,11 +22,14 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 @AndroidEntryPoint
-class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
+class ShowDetailsFragment : Fragment(R.layout.fragment_details),
+    AdapterView.OnItemSelectedListener {
 
     private val viewModel by viewModels<ShowDetailsViewModel>()
     private var _binding: FragmentShowDetailsBinding? = null
     private val binding get() = _binding!!
+    private var arrayAdapter: ArrayAdapter<String>? = null
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,6 +44,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
         return binding.root
     }
 
+
     private val spinnerList: ArrayList<String>
         get() {
             return arrayListOf()
@@ -48,6 +52,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
 
     private fun displayShow() {
         val spinner = binding.spinner
+        spinner.onItemSelectedListener = this
         var content = ""
         val spinnerItems = spinnerList
         viewModel.show.observe(viewLifecycleOwner, {
@@ -69,15 +74,15 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
             }
 
         })
+        val noOfSeasons = arrayOf("Season 1", "Season 2", "Season 3")
+        val no = spinnerList.size
 
-        val arrayAdapter =
-            ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, spinnerItems)
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        arrayAdapter =
+            ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, )
         spinner.adapter = arrayAdapter
-        spinner.setOnItemClickListener { parent, view, position, id ->
-            val data: String = spinner.getItemAtPosition(position).toString()
-            Toast.makeText(requireContext(), data, Toast.LENGTH_SHORT).show()
-        }
+
+        Log.d( "displayShow: ", spinnerItems.toString())
+
     }
 
     private fun glideAdapter(imageUrl: String?, view: ImageView) {
@@ -191,6 +196,15 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details) {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        val selected = parent?.selectedItem.toString()
+
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+        TODO("Not yet implemented")
     }
 
 }
