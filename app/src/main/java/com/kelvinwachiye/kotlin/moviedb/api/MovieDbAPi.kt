@@ -1,6 +1,7 @@
 package com.kelvinwachiye.kotlin.moviedb.api
 
 import com.kelvinwachiye.kotlin.moviedb.domains.Credits
+import com.kelvinwachiye.kotlin.moviedb.domains.Season
 import com.kelvinwachiye.kotlin.moviedb.domains.Show
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetworkMovieResultContainer
@@ -49,4 +50,11 @@ interface MovieDbAPi {
         @Path("id") id: String,
         @Query("api_key") key: String
     ): Credits
+
+    @GET("tv/{id}/season/{s_no}")
+    suspend fun getEpisodes(
+        @Path("id") id: Int,
+        @Path("s_no") sNo: Int,
+        @Query("api_key") key: String
+    ): Season
 }
