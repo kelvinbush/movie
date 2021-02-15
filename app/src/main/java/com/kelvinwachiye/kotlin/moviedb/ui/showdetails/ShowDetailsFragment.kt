@@ -61,16 +61,15 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 glideAdapter2(it.backdrop_path, backdrop)
                 glideAdapter(it.poster_path, poster)
                 showCredits()
-
             }
-
+            arrayAdapter =
+                ArrayAdapter(
+                    requireActivity(),
+                    android.R.layout.simple_spinner_item,
+                    allSeasons)
+            spinner.adapter = arrayAdapter
         })
-        val noOfSeasons = arrayOf("Season 1", "Season 2", "Season 3")
 
-        arrayAdapter =
-            ArrayAdapter(requireActivity(), android.R.layout.simple_spinner_item, allSeasons)
-        spinner.adapter = arrayAdapter
-        Log.d("displayShow: ", allSeasons.toString())
 
     }
 
