@@ -7,6 +7,7 @@ import androidx.lifecycle.*
 import com.kelvinwachiye.kotlin.moviedb.Key
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
 import com.kelvinwachiye.kotlin.moviedb.domains.Credits
+import com.kelvinwachiye.kotlin.moviedb.domains.Season
 import com.kelvinwachiye.kotlin.moviedb.domains.Show
 import com.kelvinwachiye.kotlin.moviedb.domains.TvShow
 import com.kelvinwachiye.kotlin.moviedb.ui.moviedetails.ApiStatus
@@ -14,28 +15,32 @@ import kotlinx.coroutines.launch
 
 private const val TAG = "ShowDetailsViewModel"
 
+
+enum class EpisodesStatus { LOADING, ERROR, DONE }
 class ShowDetailsViewModel
 @ViewModelInject constructor(
     private val movieDbAPi: MovieDbAPi,
     @Assisted private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
-    private val _show = MutableLiveData<Show>()
-    private val _credits = MutableLiveData<Credits>()
-
     private val id = savedStateHandle.get<TvShow>("tvShow")?.id ?: "0"
 
-    // The internal MutableLiveData that stores the status of the most recent request
-    private val _status = MutableLiveData<ApiStatus>()
+    private val _show = MutableLiveData<Show>()
+    val show: LiveData<Show>
+        get() = _show
 
-    // The external immutable LiveData for the request status
+    private val _credits = MutableLiveData<Credits>()
+    val credits: LiveData<Credits>
+        get() = _credits
+
+    private val _status = MutableLiveData<ApiStatus>()
     val status: LiveData<ApiStatus>
         get() = _status
 
-    val show: LiveData<Show>
-        get() = _show
-    val credits: LiveData<Credits>
-        get() = _credits
+    private val _episodes = MutableLiveData<Season>()
+    val episodes: LiveData<Season>
+        get() = _episodes
+
 
     init {
         getShow(id)
