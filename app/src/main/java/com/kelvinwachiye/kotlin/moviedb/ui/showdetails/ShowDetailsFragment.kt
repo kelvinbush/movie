@@ -66,8 +66,13 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 ArrayAdapter(
                     requireActivity(),
                     android.R.layout.simple_spinner_item,
-                    allSeasons)
+                    allSeasons
+                )
             spinner.adapter = arrayAdapter
+        })
+
+        viewModel.episodes.observe(viewLifecycleOwner, {
+            Log.d("Episodes : ", it.toString())
         })
 
 
