@@ -41,8 +41,13 @@ class ShowDetailsViewModel
     val episodes: LiveData<Season>
         get() = _episodes
 
+    private val currentQuery = savedStateHandle.getLiveData(
+        CURRENT_QUERY,
+        DEFAULT_QUERY
+    )
 
     init {
+        getEpisodes(id, 1)
         getShow(id)
         getCredits(id)
         Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
@@ -72,6 +77,24 @@ class ShowDetailsViewModel
                 Log.d(TAG, "getCredits: ${e.message}")
             }
         }
+    }
+
+    private fun getEpisodes(id: String, sNo: Int) {
+        viewModelScope.launch {
+            _status.value = ApiStatus.LOADING
+            try {
+                _episodes.value = movieDbAPi.getEpisodes(id, sNo, Key.api_key)
+                _status.value = ApiStatus.DONE
+            } catch (e: Exception) {
+                _status.value = ApiStatus.ERROR
+                Log.d(TAG, "getEpisodes: ${e.message}")
+            }
+        }
+    }
+
+    companion object {
+        private const val DEFAULT_QUERY = "1"
+        private const val CURRENT_QUERY = "current_query"
     }
 
 }
