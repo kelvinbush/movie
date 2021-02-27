@@ -1,8 +1,6 @@
 package com.kelvinwachiye.kotlin.moviedb.ui.showdetails
 
 import android.util.Log
-import androidx.hilt.Assisted
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.kelvinwachiye.kotlin.moviedb.Key
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
@@ -11,16 +9,19 @@ import com.kelvinwachiye.kotlin.moviedb.domains.Season
 import com.kelvinwachiye.kotlin.moviedb.domains.Show
 import com.kelvinwachiye.kotlin.moviedb.domains.TvShow
 import com.kelvinwachiye.kotlin.moviedb.ui.moviedetails.ApiStatus
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 private const val TAG = "ShowDetailsViewModel"
 
 
 enum class EpisodesStatus { LOADING, ERROR, DONE }
+@HiltViewModel
 class ShowDetailsViewModel
-@ViewModelInject constructor(
+@Inject constructor(
     private val movieDbAPi: MovieDbAPi,
-    @Assisted private val savedStateHandle: SavedStateHandle
+    savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     private val id = savedStateHandle.get<TvShow>("tvShow")?.id ?: "0"

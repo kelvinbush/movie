@@ -33,7 +33,7 @@ class MovieDetailsFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         Log.d(TAG, "onCreateView: ${args.movie.title}")
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this

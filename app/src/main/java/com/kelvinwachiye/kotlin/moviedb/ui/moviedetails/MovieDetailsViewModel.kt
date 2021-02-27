@@ -1,25 +1,25 @@
 package com.kelvinwachiye.kotlin.moviedb.ui.moviedetails
 
 import android.util.Log
-import androidx.hilt.Assisted
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.kelvinwachiye.kotlin.moviedb.Key
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 enum class ApiStatus { LOADING, ERROR, DONE }
 
 
 private const val TAG = "MovieDetailsViewModel"
 
+@HiltViewModel
 class MovieDetailsViewModel
-@ViewModelInject constructor
-    (
+@Inject constructor(
     private val movieDbAPi: MovieDbAPi,
-    @Assisted private val savedStateHandle: SavedStateHandle
+    savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     private val _details = MutableLiveData<NetWorkMovieDetails>()

@@ -1,19 +1,20 @@
 package com.kelvinwachiye.kotlin.moviedb.ui.movielist
 
-import androidx.hilt.Assisted
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import com.kelvinwachiye.kotlin.moviedb.repository.MainRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
 private const val TAG = "MovieListViewModel"
 
-class MovieListViewModel @ViewModelInject constructor(
+@HiltViewModel
+class MovieListViewModel @Inject constructor(
     private val mainRepository: MainRepository,
-    @Assisted stateHandle: SavedStateHandle
+    stateHandle: SavedStateHandle
 ) :
     ViewModel() {
 

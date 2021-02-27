@@ -28,7 +28,7 @@ class MovieListFragment : Fragment(), MoviesAdapter.OnItemClickListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMovieListBinding.inflate(inflater)
         val manager = GridLayoutManager(activity, 3)
         binding.recyclerView.layoutManager = manager

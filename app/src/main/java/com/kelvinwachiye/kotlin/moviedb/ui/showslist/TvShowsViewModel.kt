@@ -1,17 +1,18 @@
 package com.kelvinwachiye.kotlin.moviedb.ui.showslist
 
-import androidx.hilt.Assisted
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import com.kelvinwachiye.kotlin.moviedb.repository.MainRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class TvShowsViewModel @ViewModelInject constructor(
+@HiltViewModel
+class TvShowsViewModel @Inject constructor(
     private val mainRepository: MainRepository,
-    @Assisted stateHandle: SavedStateHandle
+    stateHandle: SavedStateHandle
 ) :
     ViewModel() {
 
