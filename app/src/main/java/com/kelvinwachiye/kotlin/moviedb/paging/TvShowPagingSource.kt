@@ -1,6 +1,7 @@
 package com.kelvinwachiye.kotlin.moviedb.paging
 
 import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.kelvinwachiye.kotlin.moviedb.Key
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
 import com.kelvinwachiye.kotlin.moviedb.domains.TvShow
@@ -35,5 +36,9 @@ class TvShowPagingSource @Inject constructor(
         } catch (exception: HttpException) {
             LoadResult.Error(exception)
         }
+    }
+
+    override fun getRefreshKey(state: PagingState<Int, TvShow>): Int? {
+        return state.anchorPosition
     }
 }
