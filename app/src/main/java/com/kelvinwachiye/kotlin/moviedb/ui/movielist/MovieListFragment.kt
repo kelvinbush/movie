@@ -5,8 +5,7 @@ import android.view.*
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.observe
+import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.GridLayoutManager
@@ -19,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MovieListFragment : Fragment(), MoviesAdapter.OnItemClickListener {
 
-    private val movieListViewModel by viewModels<MovieListViewModel>()
+    private val movieListViewModel: MovieListViewModel by hiltNavGraphViewModels(R.id.mobile_navigation)
 
     private var _binding: FragmentMovieListBinding? = null
     private val binding get() = _binding!!

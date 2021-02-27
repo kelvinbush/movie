@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
@@ -19,7 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class TvShowsFragment : Fragment(R.layout.fragment_show_list), ShowsAdapter.OnItemClickListener {
 
-    private val tvShowsViewModel by viewModels<TvShowsViewModel>()
+    private val tvShowsViewModel: TvShowsViewModel by hiltNavGraphViewModels(R.id.mobile_navigation)
 
     private var _binding: FragmentShowListBinding? = null
     private val binding get() = _binding!!

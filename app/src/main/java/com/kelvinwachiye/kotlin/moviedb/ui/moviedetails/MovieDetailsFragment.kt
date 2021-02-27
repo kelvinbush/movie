@@ -6,10 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
+import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.navArgs
-import androidx.navigation.ui.AppBarConfiguration
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.kelvinwachiye.kotlin.moviedb.R
@@ -27,7 +25,7 @@ class MovieDetailsFragment : Fragment() {
     private val args by navArgs<MovieDetailsFragmentArgs>()
     private var _binding: FragmentDetailsBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: MovieDetailsViewModel by viewModels()
+    private val viewModel: MovieDetailsViewModel by hiltNavGraphViewModels(R.id.mobile_navigation)
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
@@ -27,7 +27,7 @@ import java.util.*
 class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     AdapterView.OnItemSelectedListener {
 
-    private val viewModel by viewModels<ShowDetailsViewModel>()
+    private val viewModel: ShowDetailsViewModel by hiltNavGraphViewModels(R.id.mobile_navigation)
     private var _binding: FragmentShowDetailsBinding? = null
     private val binding get() = _binding!!
     private var arrayAdapter: ArrayAdapter<String>? = null
@@ -185,8 +185,8 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
             /** DEBUG dateStr = '2006-04-16T04:00:00Z' **/
             val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH)
             val mDate = formatter.parse(dateStr) // this never ends while debugging
-            val dater = SimpleDateFormat("EEE, MMM d, yyyy")
-            dater.format(mDate)
+            val dater = SimpleDateFormat("EEE, MMM d, yyyy", Locale.ENGLISH)
+            dater.format(mDate!!)
         } catch (e: Exception) {
             Log.d("mDate", e.toString()) // this never gets called either
             dateStr
