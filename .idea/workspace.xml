@@ -36,12 +36,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="add episodes recycler view">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="Removing deprecated dependencies">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
@@ -52,6 +51,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
@@ -90,67 +90,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_work_work_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_work_work_runtime_2_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_work_work_runtime_ktx_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_work_work_runtime_ktx_2_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_11_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_11_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/androidx/databinding/library/baseAdapters/BR.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/androidx/databinding/library/baseAdapters/BR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/BR.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/BR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/DaggerMovieApplication_HiltComponents_ApplicationC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/DataBinderMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/DataBinderMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/Hilt_MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/Hilt_MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/Hilt_MovieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/Hilt_MovieApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/MainActivity_GeneratedInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/MainActivity_GeneratedInjector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/MovieApplication_GeneratedInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/MovieApplication_GeneratedInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/MovieApplication_HiltComponents.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/database/MovieDao_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/database/MovieDao_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/database/MoviesDatabase_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/database/MoviesDatabase_Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/databinding/FragmentDetailsBindingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/databinding/FragmentDetailsBindingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/databinding/GridItemMovieBindingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/databinding/GridItemMovieBindingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/databinding/GridItemShowBindingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/databinding/GridItemShowBindingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/di/AppModule_ProvideMoshiFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/di/AppModule_ProvideMovieDbApiFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/di/AppModule_ProvideRetrofitFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/domains/network/NetworkMovieMapper_Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/domains/network/NetworkMovieMapper_Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/domains/network/NetworkTvShowMapper_Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/domains/network/NetworkTvShowMapper_Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/paging/MoviePagingSource_Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/paging/MoviePagingSource_Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/paging/TvShowPagingSource_Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/paging/TvShowPagingSource_Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/repository/MainRepository_Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/repository/MainRepository_Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/Hilt_MovieDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/Hilt_MovieDetailsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFragment_GeneratedInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFragment_GeneratedInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel_AssistedFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel_AssistedFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel_AssistedFactory_Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel_HiltModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel_HiltModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/Hilt_MovieListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/Hilt_MovieListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListFragment_GeneratedInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListFragment_GeneratedInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListViewModel_AssistedFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListViewModel_AssistedFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListViewModel_AssistedFactory_Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListViewModel_HiltModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/movielist/MovieListViewModel_HiltModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/Hilt_ShowDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/Hilt_ShowDetailsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment_GeneratedInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment_GeneratedInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel_AssistedFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel_AssistedFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel_AssistedFactory_Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel_HiltModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel_HiltModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/Hilt_TvShowsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/Hilt_TvShowsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsFragment_GeneratedInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsFragment_GeneratedInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsViewModel_AssistedFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsViewModel_AssistedFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsViewModel_AssistedFactory_Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsViewModel_HiltModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/kelvinwachiye/kotlin/moviedb/ui/showslist/TvShowsViewModel_HiltModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_MainActivity_GeneratedInjectorModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_MovieApplication_GeneratedInjectorModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_di_AppModuleModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_moviedetails_MovieDetailsFragment_GeneratedInjectorModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_moviedetails_MovieDetailsViewModel_HiltModuleModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_movielist_MovieListFragment_GeneratedInjectorModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_movielist_MovieListViewModel_HiltModuleModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_showdetails_ShowDetailsFragment_GeneratedInjectorModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_showdetails_ShowDetailsViewModel_HiltModuleModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_showslist_TvShowsFragment_GeneratedInjectorModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/hilt_aggregated_deps/com_kelvinwachiye_kotlin_moviedb_ui_showslist_TvShowsViewModel_HiltModuleModuleDeps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/adapters/EpisodesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/adapters/EpisodesAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/di/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/episodes_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/episodes_list_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_episodes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_episodes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/paging/MoviePagingSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/paging/MoviePagingSource.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -563,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614415402607</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="migrate to singleton component">
+      <created>1614417474790</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614417474791</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -605,7 +567,9 @@
     <MESSAGE value="remove unused dependencies" />
     <MESSAGE value="add spinner recycler view" />
     <MESSAGE value="add episodes recycler view" />
-    <option name="LAST_COMMIT_MESSAGE" value="add episodes recycler view" />
+    <MESSAGE value="migrate to singleton component" />
+    <MESSAGE value="Removing deprecated dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing deprecated dependencies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606558199164">
