@@ -20,9 +20,7 @@ import java.lang.SuppressWarnings;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
-import javax.annotation.Generated;
 
-@Generated("androidx.room.RoomProcessor")
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class MoviesDatabase_Impl extends MoviesDatabase {
   private volatile MovieDao _movieDao;

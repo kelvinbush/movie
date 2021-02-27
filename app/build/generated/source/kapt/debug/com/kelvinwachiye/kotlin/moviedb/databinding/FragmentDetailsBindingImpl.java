@@ -5,7 +5,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;
 @SuppressWarnings("unchecked")
-@javax.annotation.Generated("Android Data Binding")
 public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
 
     @Nullable

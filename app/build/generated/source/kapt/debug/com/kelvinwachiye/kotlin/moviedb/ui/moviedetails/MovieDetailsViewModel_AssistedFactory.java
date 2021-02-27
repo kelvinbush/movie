@@ -5,11 +5,9 @@ import androidx.hilt.lifecycle.ViewModelAssistedFactory;
 import androidx.lifecycle.SavedStateHandle;
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi;
 import java.lang.Override;
-import javax.annotation.Generated;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-@Generated("androidx.hilt.AndroidXHiltProcessor")
 public final class MovieDetailsViewModel_AssistedFactory implements ViewModelAssistedFactory<MovieDetailsViewModel> {
   private final Provider<MovieDbAPi> movieDbAPi;
 
@@ -20,7 +18,7 @@ public final class MovieDetailsViewModel_AssistedFactory implements ViewModelAss
 
   @Override
   @NonNull
-  public MovieDetailsViewModel create(SavedStateHandle arg0) {
-    return new MovieDetailsViewModel(movieDbAPi.get(), arg0);
+  public MovieDetailsViewModel create(SavedStateHandle handle) {
+    return new MovieDetailsViewModel(movieDbAPi.get(), handle);
   }
 }

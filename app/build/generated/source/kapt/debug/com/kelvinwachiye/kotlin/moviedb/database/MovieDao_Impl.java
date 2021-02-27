@@ -16,9 +16,7 @@ import java.lang.SuppressWarnings;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
-import javax.annotation.Generated;
 
-@Generated("androidx.room.RoomProcessor")
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class MovieDao_Impl implements MovieDao {
   private final RoomDatabase __db;
