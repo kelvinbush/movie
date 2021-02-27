@@ -35,12 +35,6 @@ class MovieDetailsFragment : Fragment() {
         Log.d(TAG, "onCreateView: ${args.movie.title}")
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
-////        val viewModelFactory = MovieDetailsFactory(args.movie.id)
-//        binding.viewModel = ViewModelProvider(
-//            this,
-//            viewModelFactory
-//        ).get(MovieDetailsViewModel::class.java)
-
         displayMovieDetails(args.movie)
 
         return binding.root
