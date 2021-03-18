@@ -36,10 +36,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="add diffutil to episodes">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="use binding in episodes adapter">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/adapters/EpisodesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/adapters/EpisodesAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/episodes_list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/episodes_list_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,12 +141,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\res\drawable" />
-      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res\layout" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\movies\ui" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movielist" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\moviedetails" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\showdetails" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movie" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.kelvinwachiye.kotlin.moviedb.ui" />
@@ -163,15 +162,16 @@
       <recent name="com.kelvinwachiye.kotlin.moviedb" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.kelvinwachiye.kotlin.moviedb.ui.showdetails" />
       <recent name="com.kelvinwachiye.kotlin.movies.ui.details" />
       <recent name="com.kelvinwachiye.kotlin.movies.ui.shows" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movielist" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\moviedetails" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\showdetails" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movie" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\res\drawable" />
+      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res\layout" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\movies\ui" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -521,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616081813615</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="use binding in episodes adapter">
+      <created>1616082847634</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082847634</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -543,7 +550,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="polishing" />
     <MESSAGE value="show details adding features" />
     <MESSAGE value="polishing the ui" />
     <MESSAGE value="change image configuration" />
@@ -568,7 +574,8 @@
     <MESSAGE value="fix stateHandle bug" />
     <MESSAGE value="refactor episodes adapter" />
     <MESSAGE value="add diffutil to episodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add diffutil to episodes" />
+    <MESSAGE value="use binding in episodes adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="use binding in episodes adapter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616081263616">
@@ -615,10 +622,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616078970756" />
-    <state x="0" y="60" width="916" height="708" key="SettingsEditor" timestamp="1615896265786">
+    <state x="0" y="60" width="916" height="708" key="SettingsEditor" timestamp="1616083203862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="60" width="916" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1615896265786" />
+    <state x="0" y="60" width="916" height="708" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1616083203862" />
     <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1614415420899">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
