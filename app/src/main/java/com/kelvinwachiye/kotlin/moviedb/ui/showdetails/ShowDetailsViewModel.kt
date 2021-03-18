@@ -47,14 +47,14 @@ class ShowDetailsViewModel
         DEFAULT_QUERY
     )
 
-    init {
-        getEpisodes(id, 1)
-        getShow(id)
-        getCredits(id)
-        Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
-    }
+//    init {
+//        getEpisodes(id, 1)
+//        getShow(id)
+//        getCredits(id)
+//        Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
+//    }
 
-    private fun getShow(id: String) {
+    fun getShow(id: String) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {
@@ -67,7 +67,7 @@ class ShowDetailsViewModel
         }
     }
 
-    private fun getCredits(id: String) {
+    fun getCredits(id: String) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {
@@ -80,7 +80,7 @@ class ShowDetailsViewModel
         }
     }
 
-    private fun getEpisodes(id: String, sNo: Int) {
+    fun getEpisodes(id: String, sNo: Int) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {

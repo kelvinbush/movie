@@ -52,7 +52,7 @@ interface MovieDbAPi {
     ): Credits
 
     @GET("tv/{id}/season/{s_no}")
-    suspend fun getEpisodes(
+    fun getEpisodes(
         @Path("id") id: String,
         @Path("s_no") sNo: Int,
         @Query("api_key") key: String

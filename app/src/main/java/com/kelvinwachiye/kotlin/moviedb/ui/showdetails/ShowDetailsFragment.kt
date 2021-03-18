@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
+import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
@@ -32,6 +33,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     private val binding get() = _binding!!
     private var arrayAdapter: ArrayAdapter<String>? = null
     private val allSeasons = arrayListOf<String>()
+    private val args by navArgs<ShowDetailsFragmentArgs>()
 
 
     override fun onCreateView(
@@ -41,6 +43,11 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     ): View {
 
         _binding = FragmentShowDetailsBinding.inflate(inflater, container, false)
+        viewModel.getEpisodes(args.tvShow.id, 1)
+        viewModel.apply {
+            getCredits(args.tvShow.id)
+            getShow(args.tvShow.id)
+        }
 
         displayShow()
 

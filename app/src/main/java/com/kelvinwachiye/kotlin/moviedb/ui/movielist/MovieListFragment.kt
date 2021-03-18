@@ -103,10 +103,10 @@ class MovieListFragment : Fragment(), MoviesAdapter.OnItemClickListener {
         _binding = null
     }
 
-    override fun onItemClick(movie: Movie) {
+    override fun onItemClick(movie2: Movie) {
         val action =
             MovieListFragmentDirections.actionNavigationMovieListToDetailsFragment(
-                movie
+                movie2
             )
         findNavController().navigate(action)
     }

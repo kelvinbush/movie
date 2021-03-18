@@ -28,8 +28,11 @@
             app:launchSingleTop="true"
             app:popUpTo="@id/navigation_movie_list"
             app:popUpToInclusive="true" />
+<!--        <argument-->
+<!--            android:name="movie"-->
+<!--            app:argType="com.kelvinwachiye.kotlin.moviedb.domains.Movie" />-->
         <argument
-            android:name="movie"
+            android:name="movie2"
             app:argType="com.kelvinwachiye.kotlin.moviedb.domains.Movie" />
     </fragment>
     <fragment

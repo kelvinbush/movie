@@ -6,6 +6,9 @@ import com.kelvinwachiye.kotlin.moviedb.Key
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
+import dagger.assisted.Assisted
+import dagger.assisted.AssistedFactory
+import dagger.assisted.AssistedInject
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -33,15 +36,15 @@ class MovieDetailsViewModel
     // The external immutable LiveData for the request status
     val status: LiveData<ApiStatus>
         get() = _status
-    private val id: String = savedStateHandle.get<Movie>("movie")?.id ?: "0"
+    private val id: String = savedStateHandle.get<Movie>("movie2")?.id ?: "0"
 
 
     init {
         getMovieDetails(id)
-        Log.d(TAG, "called.............: ${savedStateHandle.get<Movie>("movie")}")
+        Log.d(TAG, "called.............: ${savedStateHandle.keys()}")
     }
 
-    private fun getMovieDetails(id: String) {
+    fun getMovieDetails(id: String) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {

@@ -61,7 +61,7 @@ class MoviesAdapter(private val listener: OnItemClickListener) :
     }
 
     interface OnItemClickListener {
-        fun onItemClick(movie: Movie)
+        fun onItemClick(movie2: Movie)
     }
 
 
