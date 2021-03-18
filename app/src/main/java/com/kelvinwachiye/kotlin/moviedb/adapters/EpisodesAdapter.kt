@@ -13,23 +13,17 @@ import com.kelvinwachiye.kotlin.moviedb.domains.Episode
 
 class EpisodesAdapter : ListAdapter<Episode, EpisodesAdapter.ViewHolder>(EpisodesDiffCallBack()) {
 
-    var data = listOf<Episode>()
-        set(value) {
-            field = value
-            notifyDataSetChanged()
-        }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.from(parent)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = data[position]
+        val item = getItem(position)
         holder.bind(item)
     }
 
-    override
-    fun getItemCount() = data.size
 
     class ViewHolder private constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val overview: TextView = itemView.findViewById(R.id.overview)
