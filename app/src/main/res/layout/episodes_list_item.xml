@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-<!--        <variable-->
-<!--            name=""-->
-<!--            type="" />-->
+        <variable
+            name="episode"
+            type="com.kelvinwachiye.kotlin.moviedb.domains.Episode" />
     </data>
 
     <LinearLayout
