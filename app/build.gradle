@@ -12,6 +12,7 @@ android {
         dataBinding true
         viewBinding true
     }
+    kotlinOptions.useIR = true
 
     defaultConfig {
         applicationId "com.kelvinwachiye.kotlin.movies"

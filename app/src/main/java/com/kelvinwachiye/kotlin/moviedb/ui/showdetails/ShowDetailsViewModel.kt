@@ -21,7 +21,7 @@ enum class EpisodesStatus { LOADING, ERROR, DONE }
 class ShowDetailsViewModel
 @Inject constructor(
     private val movieDbAPi: MovieDbAPi,
-    savedStateHandle: SavedStateHandle
+    private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     private val id = savedStateHandle.get<TvShow>("tvShow")?.id ?: "0"
@@ -42,17 +42,13 @@ class ShowDetailsViewModel
     val episodes: LiveData<Season>
         get() = _episodes
 
-    private val currentQuery = savedStateHandle.getLiveData(
-        CURRENT_QUERY,
-        DEFAULT_QUERY
-    )
 
-//    init {
-//        getEpisodes(id, 1)
-//        getShow(id)
-//        getCredits(id)
-//        Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
-//    }
+    init {
+        getEpisodes(id, 1)
+        getShow(id)
+        getCredits(id)
+        Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
+    }
 
     fun getShow(id: String) {
         viewModelScope.launch {
@@ -93,9 +89,5 @@ class ShowDetailsViewModel
         }
     }
 
-    companion object {
-        private const val DEFAULT_QUERY = "1"
-        private const val CURRENT_QUERY = "current_query"
-    }
 
 }

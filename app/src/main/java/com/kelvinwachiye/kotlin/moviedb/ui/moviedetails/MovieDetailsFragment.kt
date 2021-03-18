@@ -26,7 +26,7 @@ class MovieDetailsFragment : Fragment() {
     private val args by navArgs<MovieDetailsFragmentArgs>()
     private var _binding: FragmentDetailsBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: MovieDetailsViewModel by viewModels<> {  }
+    private val viewModel: MovieDetailsViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -7,8 +7,6 @@ import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
 import dagger.assisted.Assisted
-import dagger.assisted.AssistedFactory
-import dagger.assisted.AssistedInject
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -22,7 +20,7 @@ private const val TAG = "MovieDetailsViewModel"
 class MovieDetailsViewModel
 @Inject constructor(
     private val movieDbAPi: MovieDbAPi,
-    savedStateHandle: SavedStateHandle
+    private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     private val _details = MutableLiveData<NetWorkMovieDetails>()
@@ -41,7 +39,7 @@ class MovieDetailsViewModel
 
     init {
         getMovieDetails(id)
-        Log.d(TAG, "called.............: ${savedStateHandle.keys()}")
+        Log.d(TAG, "called.............: ${savedStateHandle.get<Movie>("movie2")}")
     }
 
     fun getMovieDetails(id: String) {

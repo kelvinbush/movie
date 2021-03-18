@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
@@ -28,7 +29,7 @@ import java.util.*
 class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     AdapterView.OnItemSelectedListener {
 
-    private val viewModel: ShowDetailsViewModel by hiltNavGraphViewModels(R.id.mobile_navigation)
+    private val viewModel: ShowDetailsViewModel by viewModels()
     private var _binding: FragmentShowDetailsBinding? = null
     private val binding get() = _binding!!
     private var arrayAdapter: ArrayAdapter<String>? = null
@@ -48,6 +49,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
             getCredits(args.tvShow.id)
             getShow(args.tvShow.id)
         }
+        Log.d("TAG", "onCreateView: ${args.tvShow}")
 
         displayShow()
 
