@@ -36,7 +36,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="removing commented out code">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="fix stateHandle bug">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -47,16 +47,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Movies.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsRepo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/adapters/EpisodesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/adapters/EpisodesAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,7 +502,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614421662666</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fix stateHandle bug">
+      <created>1616078822953</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1616078822953</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix stateHandle bug">
+      <created>1616078851306</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1616078851306</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +538,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="optimization" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="polishing" />
@@ -557,13 +562,14 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="fix live data issue" />
     <MESSAGE value="removing commented out code" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing commented out code" />
+    <MESSAGE value="fix stateHandle bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix stateHandle bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1614425204646">
+    <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616081263616">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1614425204646" />
+    <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1616081263616" />
     <state x="412" y="174" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1614427180778">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -588,22 +594,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="227" height="296" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1614415417520" />
-    <state width="1323" height="255" key="GridCell.Tab.0.bottom" timestamp="1616078556931">
+    <state width="1323" height="255" key="GridCell.Tab.0.bottom" timestamp="1616078970756">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616078556931" />
-    <state width="1323" height="255" key="GridCell.Tab.0.center" timestamp="1616078556931">
+    <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616078970756" />
+    <state width="1323" height="255" key="GridCell.Tab.0.center" timestamp="1616078970756">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616078556931" />
-    <state width="1323" height="255" key="GridCell.Tab.0.left" timestamp="1616078556931">
+    <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616078970756" />
+    <state width="1323" height="255" key="GridCell.Tab.0.left" timestamp="1616078970756">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616078556931" />
-    <state width="1323" height="255" key="GridCell.Tab.0.right" timestamp="1616078556931">
+    <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616078970756" />
+    <state width="1323" height="255" key="GridCell.Tab.0.right" timestamp="1616078970756">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616078556931" />
+    <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616078970756" />
     <state x="0" y="60" width="916" height="708" key="SettingsEditor" timestamp="1615896265786">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
