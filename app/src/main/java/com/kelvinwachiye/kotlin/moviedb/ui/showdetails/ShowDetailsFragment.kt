@@ -11,10 +11,10 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
+import com.kelvinwachiye.kotlin.moviedb.adapters.EpisodesAdapter
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL_DETAIL
@@ -52,6 +52,14 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
         Log.d("TAG", "onCreateView: ${args.tvShow}")
 
         displayShow()
+
+        val adapter = EpisodesAdapter()
+        binding.episodesList.adapter = adapter
+        viewModel.episodes.observe(viewLifecycleOwner, {
+            it.let {
+                adapter.submitList(it.episodes)
+            }
+        })
 
         return binding.root
     }

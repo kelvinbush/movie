@@ -24,10 +24,8 @@ class EpisodesAdapter : ListAdapter<Episode, EpisodesAdapter.ViewHolder>(Episode
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Episode) {
-            binding.apply {
-                name.text = item.name
-                overview.text = item.overview
-            }
+            binding.episode = item
+            binding.executePendingBindings()
         }
 
         companion object {
