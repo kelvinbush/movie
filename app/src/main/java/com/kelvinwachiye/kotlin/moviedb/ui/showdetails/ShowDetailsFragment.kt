@@ -7,20 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
-import com.bumptech.glide.Glide
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.adapters.EpisodesAdapter
-import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
-import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL
-import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants.Companion.IMAGE_BASE_URL_DETAIL
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentShowDetailsBinding
-import com.kelvinwachiye.kotlin.moviedb.domains.Cast
-import com.kelvinwachiye.kotlin.moviedb.domains.Crew
 import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
 import java.util.*
@@ -60,8 +54,13 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 adapter.submitList(it.episodes)
             }
         })
+        val layoutManager = LinearLayoutManager(requireContext())
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
-        return binding.root
+        binding.castLayout.layoutManager = layoutManager
+
+
+            return binding.root
     }
 
     private fun displayShow() {
@@ -75,9 +74,6 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 tvDate.text = getDate(it.first_air_date!!)
                 tvRating.text = it.vote_average
                 tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
-                glideAdapter2(it.backdrop_path, backdrop)
-                glideAdapter(it.poster_path, poster)
-                showCredits()
             }
             arrayAdapter =
                 ArrayAdapter(
@@ -93,107 +89,6 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
         })
 
 
-    }
-
-    private fun glideAdapter(imageUrl: String?, view: ImageView) {
-        Glide.with(requireContext())
-            .load(IMAGE_BASE_URL + imageUrl)
-            .error(R.drawable.ic_broken_image)
-            .into(view)
-    }
-
-    private fun glideAdapter2(imageUrl: String?, view: ImageView) {
-        Glide.with(requireContext())
-            .load(IMAGE_BASE_URL_DETAIL + imageUrl)
-            .error(R.drawable.ic_broken_image)
-            .into(view)
-    }
-
-
-    private fun showCredits() {
-        viewModel.credits.observe(viewLifecycleOwner, {
-            when (it.cast?.size) {
-                1 -> oneCast(it.cast, it.crew!!)
-                2 -> twoCast(it.cast, it.crew!!)
-                3 -> threeCast(it.cast, it.crew!!)
-                else -> {
-                    fourCast(it.cast!!)
-                }
-            }
-        })
-    }
-
-    private fun fourCast(cast: List<Cast>) {
-        binding.apply {
-            tvCast1.text = cast[0].character ?: MyConstants.NOT_AVAILABLE
-            tvCast2.text = cast[1].character ?: MyConstants.NOT_AVAILABLE
-            tvCast3.text = cast[2].character ?: MyConstants.NOT_AVAILABLE
-            tvCast4.text = cast[3].character ?: MyConstants.NOT_AVAILABLE
-            tCast1.text = cast[0].original_name ?: MyConstants.NOT_AVAILABLE
-            tCast2.text = cast[1].original_name ?: MyConstants.NOT_AVAILABLE
-            tCast3.text = cast[2].original_name ?: MyConstants.NOT_AVAILABLE
-            tCast4.text = cast[3].original_name ?: MyConstants.NOT_AVAILABLE
-            glideAdapter(cast[0].profile_path, cast1)
-            glideAdapter(cast[1].profile_path, cast2)
-            glideAdapter(cast[2].profile_path, cast3)
-            glideAdapter(cast[3].profile_path, cast4)
-        }
-    }
-
-    private fun threeCast(cast: List<Cast>, crew: List<Crew>) {
-        binding.apply {
-            tvCast1.text = cast[0].character ?: MyConstants.NOT_AVAILABLE
-            tvCast2.text = cast[1].character ?: MyConstants.NOT_AVAILABLE
-            tvCast3.text = cast[2].character ?: MyConstants.NOT_AVAILABLE
-            tCast1.text = cast[0].original_name ?: MyConstants.NOT_AVAILABLE
-            tCast2.text = cast[1].original_name ?: MyConstants.NOT_AVAILABLE
-            tCast3.text = cast[2].original_name ?: MyConstants.NOT_AVAILABLE
-            glideAdapter(cast[0].profile_path, cast1)
-            glideAdapter(cast[1].profile_path, cast2)
-            glideAdapter(cast[2].profile_path, cast3)
-
-            tvCast4.text = crew[0].job ?: MyConstants.NOT_AVAILABLE
-            tCast4.text = crew[0].original_name ?: MyConstants.NOT_AVAILABLE
-            glideAdapter(crew[0].profile_path, cast4)
-        }
-    }
-
-    private fun twoCast(cast: List<Cast>, crew: List<Crew>) {
-        binding.apply {
-            tvCast1.text = cast[0].character ?: MyConstants.NOT_AVAILABLE
-            tvCast2.text = cast[1].character ?: MyConstants.NOT_AVAILABLE
-            tCast1.text = cast[0].original_name ?: MyConstants.NOT_AVAILABLE
-            tCast2.text = cast[1].original_name ?: MyConstants.NOT_AVAILABLE
-            glideAdapter(cast[0].profile_path, cast1)
-            glideAdapter(cast[1].profile_path, cast2)
-
-
-            tvCast3.text = crew[0].job ?: MyConstants.NOT_AVAILABLE
-            tCast3.text = crew[0].original_name ?: MyConstants.NOT_AVAILABLE
-            tvCast4.text = crew[1].job ?: MyConstants.NOT_AVAILABLE
-            tCast4.text = crew[1].original_name ?: MyConstants.NOT_AVAILABLE
-            glideAdapter(crew[0].profile_path, cast3)
-            glideAdapter(crew[1].profile_path, cast4)
-        }
-    }
-
-    private fun oneCast(cast: List<Cast>, crew: List<Crew>) {
-        binding.apply {
-            tvCast1.text = cast[0].character ?: MyConstants.NOT_AVAILABLE
-            tCast1.text = cast[0].original_name ?: MyConstants.NOT_AVAILABLE
-            glideAdapter(cast[0].profile_path, cast1)
-
-            tvCast2.text = crew[0].job ?: MyConstants.NOT_AVAILABLE
-            tCast2.text = crew[0].original_name ?: MyConstants.NOT_AVAILABLE
-            tvCast3.text = crew[1].job ?: MyConstants.NOT_AVAILABLE
-            tCast3.text = crew[1].original_name ?: MyConstants.NOT_AVAILABLE
-            tvCast4.text = crew[2].job ?: MyConstants.NOT_AVAILABLE
-            tCast4.text = crew[2].original_name ?: MyConstants.NOT_AVAILABLE
-
-            glideAdapter(crew[0].profile_path, cast2)
-            glideAdapter(crew[1].profile_path, cast3)
-            glideAdapter(crew[2].profile_path, cast4)
-        }
     }
 
 
