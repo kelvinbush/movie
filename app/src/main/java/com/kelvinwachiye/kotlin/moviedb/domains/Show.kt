@@ -68,7 +68,8 @@ data class NextEpisode(
 data class Cast(
     val original_name: String?,
     val character: String?,
-    val profile_path: String?
+    val profile_path: String?,
+    val id: Int
 )
 
 @DefaultIfNull

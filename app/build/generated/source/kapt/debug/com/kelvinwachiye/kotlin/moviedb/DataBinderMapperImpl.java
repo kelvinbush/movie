@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.kelvinwachiye.kotlin.moviedb.databinding.EpisodesListItemBindingImpl;
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentDetailsBindingImpl;
+import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentShowDetailsBindingImpl;
 import com.kelvinwachiye.kotlin.moviedb.databinding.GridItemMovieBindingImpl;
 import com.kelvinwachiye.kotlin.moviedb.databinding.GridItemShowBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -25,15 +26,18 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTDETAILS = 2;
 
-  private static final int LAYOUT_GRIDITEMMOVIE = 3;
+  private static final int LAYOUT_FRAGMENTSHOWDETAILS = 3;
 
-  private static final int LAYOUT_GRIDITEMSHOW = 4;
+  private static final int LAYOUT_GRIDITEMMOVIE = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_GRIDITEMSHOW = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.kelvinwachiye.kotlin.moviedb.R.layout.episodes_list_item, LAYOUT_EPISODESLISTITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.kelvinwachiye.kotlin.moviedb.R.layout.fragment_details, LAYOUT_FRAGMENTDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.kelvinwachiye.kotlin.moviedb.R.layout.fragment_show_details, LAYOUT_FRAGMENTSHOWDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.kelvinwachiye.kotlin.moviedb.R.layout.grid_item_movie, LAYOUT_GRIDITEMMOVIE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.kelvinwachiye.kotlin.moviedb.R.layout.grid_item_show, LAYOUT_GRIDITEMSHOW);
   }
@@ -58,6 +62,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentDetailsBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_details is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTSHOWDETAILS: {
+          if ("layout/fragment_show_details_0".equals(tag)) {
+            return new FragmentShowDetailsBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_show_details is invalid. Received: " + tag);
         }
         case  LAYOUT_GRIDITEMMOVIE: {
           if ("layout/grid_item_movie_0".equals(tag)) {
@@ -126,11 +136,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/episodes_list_item_0", com.kelvinwachiye.kotlin.moviedb.R.layout.episodes_list_item);
       sKeys.put("layout/fragment_details_0", com.kelvinwachiye.kotlin.moviedb.R.layout.fragment_details);
+      sKeys.put("layout/fragment_show_details_0", com.kelvinwachiye.kotlin.moviedb.R.layout.fragment_show_details);
       sKeys.put("layout/grid_item_movie_0", com.kelvinwachiye.kotlin.moviedb.R.layout.grid_item_movie);
       sKeys.put("layout/grid_item_show_0", com.kelvinwachiye.kotlin.moviedb.R.layout.grid_item_show);
     }
