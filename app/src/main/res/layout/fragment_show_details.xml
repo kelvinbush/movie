@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="show"
+            type="com.kelvinwachiye.kotlin.moviedb.domains.Show" />
     </data>
 
     <LinearLayout
@@ -34,7 +36,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/backdrop" />
+                        app:srcCompat="@drawable/backdrop"
+                        app:imageUrl="@{show.backdrop_path}"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -96,7 +99,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
                             android:paddingTop="4dp"
-                            tools:text="2 Seasons" />
+                            app:textHere="@{show.number_of_seasons.toString()}" />
 
                         <TextView
                             android:id="@+id/tvDate"
@@ -105,7 +108,7 @@
                             android:layout_gravity="end"
                             android:gravity="end"
                             android:paddingTop="8dp"
-                            tools:text="2018" />
+                            app:textHere="@{show.first_air_date}" />
 
                     </LinearLayout>
 
@@ -121,7 +124,7 @@
                     android:layout_marginTop="120dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/poster" />
+                    app:imageUrl="@{show.poster_path}"/>
 
                 <LinearLayout
                     android:layout_width="269dp"
@@ -208,14 +211,14 @@
                     android:textSize="24sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/poster"
-                    tools:text="The BlackList" />
+                    app:textHere="@{show.name}" />
 
                 <TextView
                     android:id="@+id/tvPlot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="TextView"
+                    app:textHere="@{show.overview}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/tvTitle"
                     app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
