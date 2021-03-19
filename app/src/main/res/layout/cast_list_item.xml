@@ -1,12 +1,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
+        <variable
+            name="cast"
+            type="com.kelvinwachiye.kotlin.moviedb.domains.Cast" />
     </data>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
@@ -17,12 +19,12 @@
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/cast1"
+                android:id="@+id/castImage"
                 android:layout_width="match_parent"
                 android:layout_height="80dp" />
 
             <TextView
-                android:id="@+id/tv_cast_1"
+                android:id="@+id/castCharacter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -32,7 +34,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/t_cast_1"
+                android:id="@+id/castName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -40,108 +42,6 @@
                 android:textAlignment="center"
                 android:textColor="@color/light_blue"
                 android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:orientation="vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/cast2"
-                android:layout_width="match_parent"
-                android:layout_height="80dp" />
-
-            <TextView
-                android:id="@+id/tv_cast_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="2dp"
-                android:textAlignment="center"
-                android:textColor="@color/commonBlue"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/t_cast_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="2dp"
-                android:textAlignment="center"
-                android:textColor="@color/light_blue"
-                android:textSize="16sp" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:orientation="vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/cast3"
-                android:layout_width="match_parent"
-                android:layout_height="80dp" />
-
-            <TextView
-                android:id="@+id/tv_cast_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="2dp"
-                android:textAlignment="center"
-                android:textColor="@color/commonBlue"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/t_cast_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="2dp"
-                android:textAlignment="center"
-                android:textColor="@color/light_blue"
-                android:textSize="16sp" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.25"
-            android:orientation="vertical">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/cast4"
-                android:layout_width="match_parent"
-                android:layout_height="80dp" />
-
-            <TextView
-                android:id="@+id/tv_cast_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="2dp"
-                android:textAlignment="center"
-                android:textColor="@color/commonBlue"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/t_cast_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="2dp"
-                android:textAlignment="center"
-                android:textColor="@color/light_blue"
-                android:textSize="16sp" />
-
 
         </LinearLayout>
     </LinearLayout>

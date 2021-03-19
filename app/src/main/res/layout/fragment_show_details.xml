@@ -232,14 +232,15 @@
                     app:layout_constraintStart_toStartOf="@+id/tvTitle"
                     app:layout_constraintTop_toBottomOf="@+id/tvPlot" />
 
-                <include
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/castLayout"
-                    layout="@layout/cast_list_item"
+                    tools:listitem="@layout/cast_list_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@id/textView8"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"/>
 
                 <Spinner
                     android:id="@+id/spinner"

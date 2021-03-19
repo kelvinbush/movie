@@ -1,32 +1,41 @@
 package com.kelvinwachiye.kotlin.moviedb.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.kelvinwachiye.kotlin.moviedb.R
+import com.kelvinwachiye.kotlin.moviedb.databinding.CastListItemBinding
 import com.kelvinwachiye.kotlin.moviedb.domains.Cast
 
 class CastAdapter : ListAdapter<Cast, CastAdapter.ViewHolder>(CastDiffCallBack()) {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val layoutInflater = LayoutInflater.from(parent.context)
-        val view = layoutInflater.inflate(R.layout.cast_list_item, parent)
-        return ViewHolder(view)
+        return ViewHolder.from(parent)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val item = getItem(position)
+        holder.bind(item)
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder private constructor(val binding: CastListItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: Cast) {
+            binding.cast = item
+            binding.executePendingBindings()
+        }
 
+        companion object {
+            fun from(parent: ViewGroup): ViewHolder {
+                val layoutInflater = LayoutInflater.from(parent.context)
+                val binding = CastListItemBinding.inflate(layoutInflater, parent, false)
+                return ViewHolder(binding)
+            }
+        }
     }
 }
-
 
 class CastDiffCallBack : DiffUtil.ItemCallback<Cast>() {
     override fun areItemsTheSame(oldItem: Cast, newItem: Cast): Boolean {
