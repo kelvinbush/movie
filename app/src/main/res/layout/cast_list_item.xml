@@ -23,7 +23,7 @@
                 android:id="@+id/castImage"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                app:castImage="@{cast}"/>
+                app:imageUrl="@{cast.profile_path}"/>
 
             <TextView
                 android:id="@+id/castCharacter"
@@ -34,7 +34,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/commonBlue"
                 android:textSize="16sp"
-                app:character="@{cast}"/>
+                app:textHere="@{cast.character}"/>
 
             <TextView
                 android:id="@+id/castName"
@@ -45,7 +45,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/light_blue"
                 android:textSize="16sp"
-                app:originalName="@{cast}"/>
+                app:textHere="@{cast.original_name}"/>
 
         </LinearLayout>
     </LinearLayout>
