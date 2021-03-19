@@ -12,9 +12,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.adapters.CastAdapter
 import com.kelvinwachiye.kotlin.moviedb.adapters.EpisodesAdapter
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentShowDetailsBinding
 import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
@@ -41,7 +43,6 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
 
         val adapter = EpisodesAdapter()
         val castAdapter = CastAdapter()
-
         val layoutManager = LinearLayoutManager(requireContext())
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
@@ -79,6 +80,14 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 tvDate.text = getDate(it.first_air_date!!)
                 tvRating.text = it.vote_average
                 tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
+                Glide.with(requireContext())
+                    .load(MyConstants.IMAGE_BASE_URL + it.backdrop_path)
+                    .error(R.drawable.ic_broken_image)
+                    .into(backdrop)
+                Glide.with(requireContext())
+                    .load(MyConstants.IMAGE_BASE_URL + it.poster_path)
+                    .error(R.drawable.ic_broken_image)
+                    .into(poster)
             }
             arrayAdapter =
                 ArrayAdapter(
@@ -88,6 +97,12 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 )
             spinner.adapter = arrayAdapter
         })
+
+        viewModel.episodes.observe(viewLifecycleOwner, {
+            Log.d("Episodes : ", it.toString())
+        })
+
+
     }
 
 

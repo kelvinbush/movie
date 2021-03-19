@@ -35,7 +35,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="refactor textviews">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="clean up">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -582,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616142251040</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="clean up">
+      <created>1616143045082</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1616143045082</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -626,10 +645,10 @@
     <MESSAGE value="refactor casts view" />
     <MESSAGE value="complete cast adapter" />
     <MESSAGE value="configure horizontal linera layout" />
-    <MESSAGE value="clean up" />
     <MESSAGE value="refactor binding utils" />
     <MESSAGE value="refactor textviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor textviews" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616134297580">
@@ -660,22 +679,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="227" height="296" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1614415417520" />
-    <state width="1323" height="567" key="GridCell.Tab.0.bottom" timestamp="1616142141750">
+    <state width="1323" height="25" key="GridCell.Tab.0.bottom" timestamp="1616143890073">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="567" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616142141750" />
-    <state width="1323" height="567" key="GridCell.Tab.0.center" timestamp="1616142141749">
+    <state width="1323" height="25" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616143890073" />
+    <state width="1323" height="25" key="GridCell.Tab.0.center" timestamp="1616143890072">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="567" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616142141749" />
-    <state width="1323" height="567" key="GridCell.Tab.0.left" timestamp="1616142141749">
+    <state width="1323" height="25" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616143890072" />
+    <state width="1323" height="25" key="GridCell.Tab.0.left" timestamp="1616143890072">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="567" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616142141749" />
-    <state width="1323" height="567" key="GridCell.Tab.0.right" timestamp="1616142141750">
+    <state width="1323" height="25" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616143890072" />
+    <state width="1323" height="25" key="GridCell.Tab.0.right" timestamp="1616143890072">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="567" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616142141750" />
+    <state width="1323" height="25" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616143890072" />
     <state x="0" y="60" width="916" height="708" key="SettingsEditor" timestamp="1616083203862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
