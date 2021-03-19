@@ -35,7 +35,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="clean up">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -47,8 +47,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -601,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616143045082</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="refactoring">
+      <created>1616144423874</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1616144423874</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -623,7 +631,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="complete episodes call" />
     <MESSAGE value="bump up gradle &#10;dependencies" />
     <MESSAGE value="upgrade kotlin version" />
     <MESSAGE value="build version upgrade" />
@@ -648,7 +655,8 @@
     <MESSAGE value="refactor binding utils" />
     <MESSAGE value="refactor textviews" />
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616134297580">
@@ -679,22 +687,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="227" height="296" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1614415417520" />
-    <state width="1323" height="25" key="GridCell.Tab.0.bottom" timestamp="1616143890073">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom" timestamp="1616147051320">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="25" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616143890073" />
-    <state width="1323" height="25" key="GridCell.Tab.0.center" timestamp="1616143890072">
+    <state width="1323" height="163" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616147051320" />
+    <state width="1323" height="163" key="GridCell.Tab.0.center" timestamp="1616147051319">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="25" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616143890072" />
-    <state width="1323" height="25" key="GridCell.Tab.0.left" timestamp="1616143890072">
+    <state width="1323" height="163" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616147051319" />
+    <state width="1323" height="163" key="GridCell.Tab.0.left" timestamp="1616147051319">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="25" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616143890072" />
-    <state width="1323" height="25" key="GridCell.Tab.0.right" timestamp="1616143890072">
+    <state width="1323" height="163" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616147051319" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right" timestamp="1616147051320">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="25" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616143890072" />
+    <state width="1323" height="163" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616147051320" />
     <state x="0" y="60" width="916" height="708" key="SettingsEditor" timestamp="1616083203862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

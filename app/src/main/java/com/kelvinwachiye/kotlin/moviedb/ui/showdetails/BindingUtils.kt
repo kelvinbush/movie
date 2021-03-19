@@ -9,7 +9,7 @@ import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 
 @BindingAdapter("imageUrl")
-fun setCastImage(view: ImageView, url: String) {
+fun setCastImage(view: ImageView, url: String?) {
     Glide.with(view.context)
         .load(MyConstants.IMAGE_BASE_URL + url)
         .error(R.drawable.ic_broken_image)

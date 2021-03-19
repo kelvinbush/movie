@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
@@ -23,7 +22,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 @AndroidEntryPoint
-class ShowDetailsFragment : Fragment(R.layout.fragment_details),
+class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
     AdapterView.OnItemSelectedListener {
 
     private val viewModel: ShowDetailsViewModel by viewModels()
@@ -50,9 +49,10 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
             episodesList.adapter = adapter
             castLayout.adapter = castAdapter
             castLayout.layoutManager = layoutManager
+            spinner.onItemSelectedListener = this@ShowDetailsFragment
         }
+
         viewModel.apply {
-            getEpisodes(args.tvShow.id, 1)
             getCredits(args.tvShow.id)
             getShow(args.tvShow.id)
             episodes.observe(viewLifecycleOwner, {
@@ -63,48 +63,40 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
             credits.observe(viewLifecycleOwner, {
                 castAdapter.submitList(it.cast)
             })
+            show.observe(viewLifecycleOwner, {
+                if (allSeasons.isEmpty()) {
+                    for (i in 1..it.number_of_seasons!!) {
+                        allSeasons.add("Season $i")
+                    }
+                }
+                binding.apply {
+                    tvTitle.text = it.name
+                    tvPlot.text = it.overview
+                    tvDate.text = getDate(it.first_air_date!!)
+                    tvRating.text = it.vote_average
+                    tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
+                    Glide.with(requireContext())
+                        .load(MyConstants.IMAGE_BASE_URL + it.backdrop_path)
+                        .error(R.drawable.ic_broken_image)
+                        .into(backdrop)
+                    Glide.with(requireContext())
+                        .load(MyConstants.IMAGE_BASE_URL + it.poster_path)
+                        .error(R.drawable.ic_broken_image)
+                        .into(poster)
+                }
+                arrayAdapter =
+                    ArrayAdapter(
+                        requireActivity(),
+                        android.R.layout.simple_spinner_item,
+                        allSeasons
+                    )
+                binding.spinner.adapter = arrayAdapter
+                Log.d("displayShow: ", allSeasons.toString())
+            })
         }
 
-        displayShow()
         return binding.root
     }
-
-    private fun displayShow() {
-        val spinner = binding.spinner
-        spinner.onItemSelectedListener = this
-        viewModel.show.observe(viewLifecycleOwner, {
-            for (i in 1..it.number_of_seasons!!) allSeasons.add("Season $i")
-            binding.apply {
-                tvTitle.text = it.name
-                tvPlot.text = it.overview
-                tvDate.text = getDate(it.first_air_date!!)
-                tvRating.text = it.vote_average
-                tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
-                Glide.with(requireContext())
-                    .load(MyConstants.IMAGE_BASE_URL + it.backdrop_path)
-                    .error(R.drawable.ic_broken_image)
-                    .into(backdrop)
-                Glide.with(requireContext())
-                    .load(MyConstants.IMAGE_BASE_URL + it.poster_path)
-                    .error(R.drawable.ic_broken_image)
-                    .into(poster)
-            }
-            arrayAdapter =
-                ArrayAdapter(
-                    requireActivity(),
-                    android.R.layout.simple_spinner_item,
-                    allSeasons
-                )
-            spinner.adapter = arrayAdapter
-        })
-
-        viewModel.episodes.observe(viewLifecycleOwner, {
-            Log.d("Episodes : ", it.toString())
-        })
-
-
-    }
-
 
     private fun getDate(dateStr: String): String {
         return try {
@@ -125,9 +117,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val selected = parent?.selectedItem.toString()
-        Toast.makeText(requireContext(), selected, Toast.LENGTH_SHORT).show()
-
+        viewModel.getEpisodes(args.tvShow.id, position + 1)
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {

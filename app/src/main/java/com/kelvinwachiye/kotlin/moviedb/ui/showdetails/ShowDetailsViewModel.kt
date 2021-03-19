@@ -44,7 +44,6 @@ class ShowDetailsViewModel
 
 
     init {
-        getEpisodes(id, 1)
         getShow(id)
         getCredits(id)
         Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
