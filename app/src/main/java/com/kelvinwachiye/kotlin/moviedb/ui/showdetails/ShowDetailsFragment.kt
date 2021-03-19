@@ -12,8 +12,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
+import com.kelvinwachiye.kotlin.moviedb.adapters.CastAdapter
 import com.kelvinwachiye.kotlin.moviedb.adapters.EpisodesAdapter
+import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentShowDetailsBinding
 import dagger.hilt.android.AndroidEntryPoint
 import java.text.SimpleDateFormat
@@ -36,31 +39,35 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentShowDetailsBinding.inflate(inflater, container, false)
-        viewModel.getEpisodes(args.tvShow.id, 1)
-        viewModel.apply {
-            getCredits(args.tvShow.id)
-            getShow(args.tvShow.id)
-        }
-        Log.d("TAG", "onCreateView: ${args.tvShow}")
-
-        displayShow()
 
         val adapter = EpisodesAdapter()
-        binding.episodesList.adapter = adapter
-        viewModel.episodes.observe(viewLifecycleOwner, {
-            it.let {
-                adapter.submitList(it.episodes)
-            }
-        })
+        val castAdapter = CastAdapter()
+
         val layoutManager = LinearLayoutManager(requireContext())
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
-        binding.castLayout.layoutManager = layoutManager
+        binding.apply {
+            episodesList.adapter = adapter
+            castLayout.adapter = castAdapter
+            castLayout.layoutManager = layoutManager
+        }
+        viewModel.apply {
+            getEpisodes(args.tvShow.id, 1)
+            getCredits(args.tvShow.id)
+            getShow(args.tvShow.id)
+            episodes.observe(viewLifecycleOwner, {
+                it.let {
+                    adapter.submitList(it.episodes)
+                }
+            })
+            credits.observe(viewLifecycleOwner, {
+                castAdapter.submitList(it.cast)
+            })
+        }
 
-
-            return binding.root
+        displayShow()
+        return binding.root
     }
 
     private fun displayShow() {
@@ -74,6 +81,14 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_details),
                 tvDate.text = getDate(it.first_air_date!!)
                 tvRating.text = it.vote_average
                 tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
+                Glide.with(requireContext())
+                    .load(MyConstants.IMAGE_BASE_URL + it.backdrop_path)
+                    .error(R.drawable.ic_broken_image)
+                    .into(backdrop)
+                Glide.with(requireContext())
+                    .load(MyConstants.IMAGE_BASE_URL + it.poster_path)
+                    .error(R.drawable.ic_broken_image)
+                    .into(poster)
             }
             arrayAdapter =
                 ArrayAdapter(
