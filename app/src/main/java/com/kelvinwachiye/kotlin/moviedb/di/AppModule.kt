@@ -1,5 +1,9 @@
 package com.kelvinwachiye.kotlin.moviedb.di
 
+import android.app.Application
+import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestManager
+import com.bumptech.glide.request.RequestOptions
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.utils.DefaultIfNullFactory
@@ -39,4 +43,12 @@ object AppModule {
     @Singleton
     fun provideMovieDbApi(retrofit: Retrofit): MovieDbAPi =
         retrofit.create(MovieDbAPi::class.java)
+
+    @Singleton
+    @Provides
+    fun provideGlideInstance(application: Application,
+                             requestOptions: RequestOptions): RequestManager {
+        return Glide.with(application)
+            .setDefaultRequestOptions(requestOptions)
+    }
 }

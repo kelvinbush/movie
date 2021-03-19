@@ -7,38 +7,42 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
+import com.kelvinwachiye.kotlin.moviedb.domains.Cast
 import com.kelvinwachiye.kotlin.moviedb.domains.Episode
 
-class BindingUtils {
-
-    companion object{
-        @BindingAdapter("name")
-        @JvmStatic
-        fun TextView.setName(item: Episode?) {
-            item?.let {
-                text = item.name
-            }
-        }
-
-        @BindingAdapter("overview")
-        @JvmStatic
-        fun TextView.setOverview(item: Episode?) {
-            item?.let {
-                text = item.overview
-            }
-        }
-
-        @BindingAdapter("imageUrl")
-        @JvmStatic
-        fun setStillPath(view: ImageView, item: Episode?) {
-            item?.let {
-                Glide.with(view.context)
-                    .load(MyConstants.IMAGE_BASE_URL + item.still_path)
-                    .error(R.drawable.ic_broken_image)
-                    .into(view)
-            }
-        }
+@BindingAdapter("character")
+fun TextView.setCharacter(item: Cast?) {
+    item?.let {
+        text = item.character
     }
+}
 
+@BindingAdapter("originalName")
+fun TextView.setOriginalName(item: Cast?) {
+    item?.let {
+        text = item.original_name
+    }
+}
 
+@BindingAdapter("castImage")
+fun setCastImage(view: ImageView, url: String) {
+    Glide.with(view.context)
+        .load(MyConstants.IMAGE_BASE_URL + url)
+        .error(R.drawable.ic_broken_image)
+        .into(view)
+
+}
+
+@BindingAdapter("overview")
+fun TextView.setOverview(item: Episode?) {
+    item?.let {
+        text = item.overview
+    }
+}
+
+@BindingAdapter("name")
+fun TextView.setName(item: Episode?) {
+    item?.let {
+        text = item.name
+    }
 }
