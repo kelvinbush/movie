@@ -14,7 +14,8 @@ class CastAdapter : ListAdapter<Cast, CastAdapter.ViewHolder>(CastDiffCallBack()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val view = layoutInflater.inflate(R.layout.fragment_show_details, parent)
+        val view = layoutInflater.inflate(R.layout.cast_list_item, parent)
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
