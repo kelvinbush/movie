@@ -22,15 +22,14 @@ fun setCastImage(view: ImageView, url: String?) {
 
 @BindingAdapter("textHere")
 fun setTextViewText(view: TextView, textPassed: String?) {
-    if (view.context.resources.getResourceEntryName(view.id) == "tvNoOfSeasons")
-        view.text = "$textPassed seasons"
-    view.text = textPassed
-    view.id
+    if (view.context.resources.getResourceEntryName(view.id) == "tvDate")
+        view.text = getDate(textPassed!!)
+    else
+        view.text = textPassed
 }
 
-@BindingAdapter("dateHere")
-fun getDate(view: TextView, dateStr: String) {
-    view.text = try {
+private fun getDate(dateStr: String) =
+    try {
         /** DEBUG dateStr = '2006-04-16T04:00:00Z' **/
         val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH)
         val mDate = formatter.parse(dateStr) // this never ends while debugging
@@ -40,4 +39,3 @@ fun getDate(view: TextView, dateStr: String) {
         Log.d("mDate", e.toString()) // this never gets called either
         dateStr
     }
-}

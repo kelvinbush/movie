@@ -41,6 +41,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="fitXY"
+                        imageUrl="@{showViewModel.show.backdrop_path}"
                         app:srcCompat="@drawable/backdrop" />
 
                     <View
@@ -109,11 +110,11 @@
 
                         <TextView
                             android:id="@+id/tvDate"
-                            dateHere="@{show.first_air_date}"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
                             android:gravity="end"
+                            android:text="@{showViewModel.show.first_air_date}"
                             android:paddingTop="8dp"
                             tools:text="2018" />
 
@@ -131,6 +132,7 @@
                     android:layout_marginTop="120dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    imageUrl="@{showViewModel.show.poster_path}"
                     app:srcCompat="@drawable/poster" />
 
                 <LinearLayout

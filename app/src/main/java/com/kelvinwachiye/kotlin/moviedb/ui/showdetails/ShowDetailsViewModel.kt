@@ -54,7 +54,7 @@ class ShowDetailsViewModel
         Log.d(TAG, "init: ${savedStateHandle.get<TvShow>("tvShow")}")
     }
 
-    fun getShow(id: String) {
+    private fun getShow(id: String) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {
@@ -67,7 +67,7 @@ class ShowDetailsViewModel
         }
     }
 
-    fun getCredits(id: String) {
+    private fun getCredits(id: String) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {
