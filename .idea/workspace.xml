@@ -18,6 +18,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="setTe" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
@@ -35,15 +36,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="adding date format class">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="refactor date format">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/CastBindingUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/moviedetails/MovieDetailsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/utils/DateFormatter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -617,7 +614,35 @@
       <option name="project" value="LOCAL" />
       <updated>1616347341547</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="using string placeholders">
+      <created>1616348997748</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1616348997748</updated>
+    </task>
+    <task id="LOCAL-00046" summary="clean up">
+      <created>1616349471338</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1616349471338</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fix date bug">
+      <created>1616350484665</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1616350484665</updated>
+    </task>
+    <task id="LOCAL-00048" summary="refactor date format">
+      <created>1616351238795</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1616351238795</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -625,7 +650,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="date">
+                    <value>
+                      <list>
+                        <option value="1616264920073" />
+                        <option value="" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -639,9 +682,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="build version upgrade" />
-    <MESSAGE value="remove unused dependencies" />
-    <MESSAGE value="add spinner recycler view" />
     <MESSAGE value="add episodes recycler view" />
     <MESSAGE value="migrate to singleton component" />
     <MESSAGE value="Removing deprecated dependencies" />
@@ -660,11 +700,14 @@
     <MESSAGE value="configure horizontal linera layout" />
     <MESSAGE value="refactor binding utils" />
     <MESSAGE value="refactor textviews" />
-    <MESSAGE value="clean up" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="add show details viewmodel to databinding" />
     <MESSAGE value="adding date format class" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding date format class" />
+    <MESSAGE value="using string placeholders" />
+    <MESSAGE value="clean up" />
+    <MESSAGE value="fix date bug" />
+    <MESSAGE value="refactor date format" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor date format" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616134297580">
@@ -695,22 +738,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="227" height="296" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1614415417520" />
-    <state width="1323" height="74" key="GridCell.Tab.0.bottom" timestamp="1616345903543">
+    <state width="1323" height="567" key="GridCell.Tab.0.bottom" timestamp="1616350415459">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="74" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616345903543" />
-    <state width="1323" height="74" key="GridCell.Tab.0.center" timestamp="1616345903541">
+    <state width="1323" height="567" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1616350415459" />
+    <state width="1323" height="567" key="GridCell.Tab.0.center" timestamp="1616350415458">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="74" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616345903541" />
-    <state width="1323" height="74" key="GridCell.Tab.0.left" timestamp="1616345903537">
+    <state width="1323" height="567" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1616350415458" />
+    <state width="1323" height="567" key="GridCell.Tab.0.left" timestamp="1616350415458">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="74" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616345903537" />
-    <state width="1323" height="74" key="GridCell.Tab.0.right" timestamp="1616345903543">
+    <state width="1323" height="567" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1616350415458" />
+    <state width="1323" height="567" key="GridCell.Tab.0.right" timestamp="1616350415458">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="74" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616345903543" />
+    <state width="1323" height="567" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1616350415458" />
     <state x="0" y="60" width="916" height="708" key="SettingsEditor" timestamp="1616083203862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -31,8 +31,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
 
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentShowDetailsBinding.inflate(inflater, container, false)

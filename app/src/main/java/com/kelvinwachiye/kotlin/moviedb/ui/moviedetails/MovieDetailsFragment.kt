@@ -36,7 +36,6 @@ class MovieDetailsFragment : Fragment() {
         Log.d(TAG, "onCreateView: ${args.movie2.title}")
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
-        viewModel.getMovieDetails(args.movie2.id)
         displayMovieDetails(args.movie2)
 
         return binding.root
@@ -62,11 +61,6 @@ class MovieDetailsFragment : Fragment() {
             }
         })
 
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putString("movie", args.movie2.id)
     }
 
     override fun onDestroyView() {
