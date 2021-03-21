@@ -1,12 +1,15 @@
 package com.kelvinwachiye.kotlin.moviedb.ui.showdetails
 
 
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.kelvinwachiye.kotlin.moviedb.R
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
+import java.text.SimpleDateFormat
+import java.util.*
 
 @BindingAdapter("imageUrl")
 fun setCastImage(view: ImageView, url: String?) {
@@ -20,4 +23,17 @@ fun setCastImage(view: ImageView, url: String?) {
 @BindingAdapter("textHere")
 fun setTextViewText(view: TextView, textPassed: String?) {
     view.text = textPassed
+}
+
+private fun getDate(dateStr: String): String {
+    return try {
+        /** DEBUG dateStr = '2006-04-16T04:00:00Z' **/
+        val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH)
+        val mDate = formatter.parse(dateStr) // this never ends while debugging
+        val dater = SimpleDateFormat("EEE, MMM d, yyyy", Locale.ENGLISH)
+        dater.format(mDate!!)
+    } catch (e: Exception) {
+        Log.d("mDate", e.toString()) // this never gets called either
+        dateStr
+    }
 }

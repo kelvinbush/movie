@@ -51,6 +51,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
             castLayout.layoutManager = layoutManager
             spinner.onItemSelectedListener = this@ShowDetailsFragment
         }
+        binding.showViewModel = viewModel
 
         viewModel.apply {
             getCredits(args.tvShow.id)
@@ -72,7 +73,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
                 binding.apply {
                     tvTitle.text = it.name
                     tvPlot.text = it.overview
-                    tvDate.text = getDate(it.first_air_date!!)
+//                    tvDate.text = getDate(it.first_air_date!!)
                     tvRating.text = it.vote_average
                     tvNoOfSeasons.text = it.number_of_seasons.toString() + " seasons"
                     Glide.with(requireContext())
@@ -98,18 +99,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
         return binding.root
     }
 
-    private fun getDate(dateStr: String): String {
-        return try {
-            /** DEBUG dateStr = '2006-04-16T04:00:00Z' **/
-            val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH)
-            val mDate = formatter.parse(dateStr) // this never ends while debugging
-            val dater = SimpleDateFormat("EEE, MMM d, yyyy", Locale.ENGLISH)
-            dater.format(mDate!!)
-        } catch (e: Exception) {
-            Log.d("mDate", e.toString()) // this never gets called either
-            dateStr
-        }
-    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
