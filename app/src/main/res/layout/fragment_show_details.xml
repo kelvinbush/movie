@@ -208,6 +208,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textColor="@color/my_blue"
                     android:textSize="24sp"
+                    android:text="@{showViewModel.show.name}"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/poster"
                     tools:text="The BlackList" />
@@ -217,7 +218,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="TextView"
+                    android:text="@{showViewModel.show.overview}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/tvTitle"
                     app:layout_constraintTop_toBottomOf="@+id/tvTitle" />

@@ -9,6 +9,7 @@ import com.kelvinwachiye.kotlin.moviedb.domains.Season
 import com.kelvinwachiye.kotlin.moviedb.domains.Show
 import com.kelvinwachiye.kotlin.moviedb.domains.TvShow
 import com.kelvinwachiye.kotlin.moviedb.ui.moviedetails.ApiStatus
+import com.kelvinwachiye.kotlin.moviedb.utils.DateFormatter
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -17,6 +18,7 @@ private const val TAG = "ShowDetailsViewModel"
 
 
 enum class EpisodesStatus { LOADING, ERROR, DONE }
+
 @HiltViewModel
 class ShowDetailsViewModel
 @Inject constructor(
@@ -29,6 +31,10 @@ class ShowDetailsViewModel
     private val _show = MutableLiveData<Show>()
     val show: LiveData<Show>
         get() = _show
+
+    private val _date = MutableLiveData<String>()
+    val date: LiveData<String>
+        get() = _date
 
     private val _credits = MutableLiveData<Credits>()
     val credits: LiveData<Credits>
@@ -86,6 +92,10 @@ class ShowDetailsViewModel
                 Log.d(TAG, "getEpisodes: ${e.message}")
             }
         }
+    }
+
+    fun setDate(date: String): String {
+        return DateFormatter().getDate(date)
     }
 
 

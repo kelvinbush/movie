@@ -35,10 +35,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="refactoring">
+    <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="add show details viewmodel to databinding">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/utils/DateFormatter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/BindingUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/kelvinwachiye/kotlin/moviedb/ui/showdetails/ShowDetailsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_show_details.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -598,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616144423874</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add show details viewmodel to databinding">
+      <created>1616346551531</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1616346551531</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -620,7 +630,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="bump up gradle &#10;dependencies" />
     <MESSAGE value="upgrade kotlin version" />
     <MESSAGE value="build version upgrade" />
     <MESSAGE value="remove unused dependencies" />
@@ -645,7 +654,8 @@
     <MESSAGE value="refactor textviews" />
     <MESSAGE value="clean up" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="add show details viewmodel to databinding" />
+    <option name="LAST_COMMIT_MESSAGE" value="add show details viewmodel to databinding" />
   </component>
   <component name="WindowStateProjectService">
     <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616134297580">

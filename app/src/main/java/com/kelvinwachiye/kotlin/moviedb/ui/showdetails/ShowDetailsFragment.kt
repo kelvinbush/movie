@@ -18,7 +18,6 @@ import com.kelvinwachiye.kotlin.moviedb.adapters.EpisodesAdapter
 import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentShowDetailsBinding
 import dagger.hilt.android.AndroidEntryPoint
-import java.text.SimpleDateFormat
 import java.util.*
 
 @AndroidEntryPoint
@@ -52,6 +51,7 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
             spinner.onItemSelectedListener = this@ShowDetailsFragment
         }
         binding.showViewModel = viewModel
+        binding.lifecycleOwner = this
 
         viewModel.apply {
             getCredits(args.tvShow.id)
@@ -98,7 +98,6 @@ class ShowDetailsFragment : Fragment(R.layout.fragment_show_details),
 
         return binding.root
     }
-
 
 
     override fun onDestroyView() {
