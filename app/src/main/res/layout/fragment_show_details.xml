@@ -114,7 +114,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
                             android:gravity="end"
-                            android:text="@{showViewModel.show.first_air_date}"
+                            textHere="@{showViewModel.show.first_air_date}"
                             android:paddingTop="8dp"
                             tools:text="2018" />
 

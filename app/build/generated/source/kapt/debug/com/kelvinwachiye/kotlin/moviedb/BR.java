@@ -7,5 +7,9 @@ public class BR {
 
   public static final int episode = 2;
 
-  public static final int viewModel = 3;
+  public static final int show = 3;
+
+  public static final int showViewModel = 4;
+
+  public static final int viewModel = 5;
 }
