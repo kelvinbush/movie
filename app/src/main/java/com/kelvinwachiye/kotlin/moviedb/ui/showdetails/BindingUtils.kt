@@ -35,8 +35,8 @@ private fun getDate(dateStr: String?) =
     try {
         /** DEBUG dateStr = '2006-04-16T04:00:00Z' **/
         val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH)
-        val mDate = formatter.parse(dateStr) // this never ends while debugging
-        val dater = SimpleDateFormat("EEE, MMM d, yyyy", Locale.ENGLISH)
+        val mDate = formatter.parse(dateStr!!) // this never ends while debugging
+        val dater = SimpleDateFormat("MMM d, yyyy", Locale.ENGLISH)
         dater.format(mDate!!)
     } catch (e: Exception) {
         Log.d("mDate", e.toString()) // this never gets called either
