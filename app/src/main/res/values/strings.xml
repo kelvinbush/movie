@@ -20,4 +20,5 @@
     <string name="rate">Rate</string>
     <string name="share">Share</string>
     <string name="seasons">\" seasons\"</string>
+    <string name="set_seasons">%1$s seasons</string>
 </resources>

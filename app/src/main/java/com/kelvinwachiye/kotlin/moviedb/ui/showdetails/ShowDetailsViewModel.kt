@@ -9,7 +9,6 @@ import com.kelvinwachiye.kotlin.moviedb.domains.Season
 import com.kelvinwachiye.kotlin.moviedb.domains.Show
 import com.kelvinwachiye.kotlin.moviedb.domains.TvShow
 import com.kelvinwachiye.kotlin.moviedb.ui.moviedetails.ApiStatus
-import com.kelvinwachiye.kotlin.moviedb.utils.DateFormatter
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -93,10 +92,5 @@ class ShowDetailsViewModel
             }
         }
     }
-
-    fun setDate(date: String): String {
-        return DateFormatter().getDate(date)
-    }
-
 
 }
