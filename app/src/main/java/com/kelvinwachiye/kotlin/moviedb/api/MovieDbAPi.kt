@@ -45,8 +45,9 @@ interface MovieDbAPi {
         @Query("api_key") key: String
     ): Show
 
-    @GET("tv/{id}/credits")
+    @GET("{category}/{id}/credits")
     suspend fun getCredits(
+        @Path("category") category: String,
         @Path("id") id: String,
         @Query("api_key") key: String
     ): Credits

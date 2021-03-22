@@ -70,7 +70,7 @@ class ShowDetailsViewModel
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {
-                _credits.value = movieDbAPi.getCredits(id, Key.api_key)
+                _credits.value = movieDbAPi.getCredits("tv",id, Key.api_key)
                 _status.value = ApiStatus.DONE
             } catch (e: Exception) {
                 _status.value = ApiStatus.ERROR

@@ -36,6 +36,7 @@ class EpisodesAdapter : ListAdapter<Episode, EpisodesAdapter.ViewHolder>(Episode
             }
         }
     }
+
 }
 
 class EpisodesDiffCallBack : DiffUtil.ItemCallback<Episode>() {

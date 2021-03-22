@@ -4,9 +4,9 @@ import android.util.Log
 import androidx.lifecycle.*
 import com.kelvinwachiye.kotlin.moviedb.Key
 import com.kelvinwachiye.kotlin.moviedb.api.MovieDbAPi
+import com.kelvinwachiye.kotlin.moviedb.domains.Credits
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 import com.kelvinwachiye.kotlin.moviedb.domains.network.NetWorkMovieDetails
-import dagger.assisted.Assisted
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -28,6 +28,10 @@ class MovieDetailsViewModel
     val details: LiveData<NetWorkMovieDetails>
         get() = _details
 
+    private val _credits = MutableLiveData<Credits>()
+    val credits: LiveData<Credits>
+        get() = _credits
+
     // The internal MutableLiveData that stores the status of the most recent request
     private val _status = MutableLiveData<ApiStatus>()
 
@@ -39,10 +43,21 @@ class MovieDetailsViewModel
 
     init {
         getMovieDetails(id)
+        getCredits(id)
         Log.d(TAG, "called.............: ${savedStateHandle.get<Movie>("movie2")}")
     }
 
-    fun getMovieDetails(id: String) {
+    private fun getCredits(id: String) {
+        viewModelScope.launch {
+            try {
+                _credits.value = movieDbAPi.getCredits("movie", id, Key.api_key)
+            } catch (e: Exception) {
+
+            }
+        }
+    }
+
+    private fun getMovieDetails(id: String) {
         viewModelScope.launch {
             _status.value = ApiStatus.LOADING
             try {

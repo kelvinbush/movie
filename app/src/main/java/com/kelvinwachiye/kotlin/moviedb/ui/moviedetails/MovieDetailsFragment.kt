@@ -7,12 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.navigation.fragment.navArgs
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.kelvinwachiye.kotlin.moviedb.R
-import com.kelvinwachiye.kotlin.moviedb.constants.MyConstants
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.kelvinwachiye.kotlin.moviedb.adapters.CastAdapter
 import com.kelvinwachiye.kotlin.moviedb.databinding.FragmentDetailsBinding
 import com.kelvinwachiye.kotlin.moviedb.domains.Movie
 import dagger.hilt.android.AndroidEntryPoint
@@ -36,31 +33,25 @@ class MovieDetailsFragment : Fragment() {
         Log.d(TAG, "onCreateView: ${args.movie2.title}")
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
+        val castAdapter = CastAdapter()
+        val layoutManager = LinearLayoutManager(requireContext())
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         displayMovieDetails(args.movie2)
+        binding.viewModel = viewModel
+
+        viewModel.credits.observe(viewLifecycleOwner, {
+            castAdapter.submitList(it.cast)
+        })
 
         return binding.root
     }
 
     private fun displayMovieDetails(movie: Movie) {
-        binding.tvTitile.text = movie.title
-        binding.tvPlot.text = movie.overview
-        binding.date.text = movie.date
-        Glide.with(requireContext())
-            .load(MyConstants.IMAGE_BASE_URL + movie.imageSrcUrl)
-            .centerCrop()
-            .transition(DrawableTransitionOptions.withCrossFade())
-            .error(R.drawable.ic_broken_image)
-            .into(binding.backdrop)
-
-        viewModel.details.observe(viewLifecycleOwner, {
-            if (it.language == MyConstants.ENGLISH) {
-                binding.tvLanguage.text = getString(R.string.eng)
-            } else {
-                binding.tvLanguage.text = it.language
-                Log.d(TAG, "displayMovieDetails: ${it.language}")
-            }
-        })
-
+        binding.apply {
+            tvTitile.text = movie.title
+            tvPlot.text = movie.overview
+            date.text = movie.date
+        }
     }
 
     override fun onDestroyView() {
