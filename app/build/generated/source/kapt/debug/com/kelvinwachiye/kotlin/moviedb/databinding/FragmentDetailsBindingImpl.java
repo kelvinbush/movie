@@ -28,25 +28,13 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
         sViewsWithIds.put(R.id.tv_plot, 12);
         sViewsWithIds.put(R.id.textView8, 13);
         sViewsWithIds.put(R.id.castLayout, 14);
-        sViewsWithIds.put(R.id.cast1, 15);
-        sViewsWithIds.put(R.id.tv_cast_1, 16);
-        sViewsWithIds.put(R.id.t_cast_1, 17);
-        sViewsWithIds.put(R.id.cast2, 18);
-        sViewsWithIds.put(R.id.tv_cast_2, 19);
-        sViewsWithIds.put(R.id.t_cast_2, 20);
-        sViewsWithIds.put(R.id.cast3, 21);
-        sViewsWithIds.put(R.id.tv_cast_3, 22);
-        sViewsWithIds.put(R.id.t_cast_3, 23);
-        sViewsWithIds.put(R.id.cast4, 24);
-        sViewsWithIds.put(R.id.tv_cast_4, 25);
-        sViewsWithIds.put(R.id.t_cast_4, 26);
-        sViewsWithIds.put(R.id.reviews, 27);
-        sViewsWithIds.put(R.id.reviewLayout, 28);
-        sViewsWithIds.put(R.id.authorImage, 29);
-        sViewsWithIds.put(R.id.author, 30);
-        sViewsWithIds.put(R.id.rvContent, 31);
-        sViewsWithIds.put(R.id.textView9, 32);
-        sViewsWithIds.put(R.id.textView10, 33);
+        sViewsWithIds.put(R.id.reviews, 15);
+        sViewsWithIds.put(R.id.reviewLayout, 16);
+        sViewsWithIds.put(R.id.authorImage, 17);
+        sViewsWithIds.put(R.id.author, 18);
+        sViewsWithIds.put(R.id.rvContent, 19);
+        sViewsWithIds.put(R.id.textView9, 20);
+        sViewsWithIds.put(R.id.textView10, 21);
     }
     // views
     @NonNull
@@ -57,39 +45,27 @@ public class FragmentDetailsBindingImpl extends FragmentDetailsBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentDetailsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 34, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 22, sIncludes, sViewsWithIds));
     }
     private FragmentDetailsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[30]
-            , (android.widget.ImageView) bindings[29]
+            , (android.widget.TextView) bindings[18]
+            , (android.widget.ImageView) bindings[17]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.ImageView) bindings[10]
             , (android.widget.ImageView) bindings[4]
             , (androidx.cardview.widget.CardView) bindings[2]
-            , (de.hdodenhof.circleimageview.CircleImageView) bindings[15]
-            , (de.hdodenhof.circleimageview.CircleImageView) bindings[18]
-            , (de.hdodenhof.circleimageview.CircleImageView) bindings[21]
-            , (de.hdodenhof.circleimageview.CircleImageView) bindings[24]
-            , (android.widget.LinearLayout) bindings[14]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[14]
             , (android.widget.TextView) bindings[7]
             , (android.widget.ImageView) bindings[5]
             , (android.widget.TextView) bindings[11]
             , (android.widget.ImageView) bindings[3]
-            , (android.widget.LinearLayout) bindings[28]
-            , (android.widget.TextView) bindings[27]
-            , (android.widget.TextView) bindings[31]
-            , (android.widget.TextView) bindings[17]
-            , (android.widget.TextView) bindings[20]
-            , (android.widget.TextView) bindings[23]
-            , (android.widget.TextView) bindings[26]
-            , (android.widget.TextView) bindings[33]
-            , (android.widget.TextView) bindings[13]
-            , (android.widget.TextView) bindings[32]
-            , (android.widget.TextView) bindings[16]
+            , (android.widget.LinearLayout) bindings[16]
+            , (android.widget.TextView) bindings[15]
             , (android.widget.TextView) bindings[19]
-            , (android.widget.TextView) bindings[22]
-            , (android.widget.TextView) bindings[25]
+            , (android.widget.TextView) bindings[21]
+            , (android.widget.TextView) bindings[13]
+            , (android.widget.TextView) bindings[20]
             , (android.widget.TextView) bindings[8]
             , (android.widget.TextView) bindings[9]
             , (android.widget.TextView) bindings[12]
