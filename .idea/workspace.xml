@@ -150,12 +150,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movielist" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\moviedetails" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\showdetails" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movie" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelvin\Documents\Movies\screenshots" />
+      <recent name="C:\Users\kelvin\Documents\Movies" />
+      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\res\drawable" />
+      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.kelvinwachiye.kotlin.moviedb.ui" />
@@ -175,12 +175,12 @@
       <recent name="com.kelvinwachiye.kotlin.movies.ui.details" />
       <recent name="com.kelvinwachiye.kotlin.movies.ui.shows" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\res\drawable" />
-      <recent name="C:\Users\kelvin\Documents\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\res\layout" />
-      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\movies\ui" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movielist" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\moviedetails" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\showdetails" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui\movie" />
+      <recent name="C:\Users\kelvin\Desktop\Movies\app\src\main\java\com\kelvinwachiye\kotlin\moviedb\ui" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -724,6 +724,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="hook up cast to movie details" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="434" y="185" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622278099698">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="434" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1622278099698" />
     <state x="474" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1616134297580">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -740,14 +744,6 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="263" y="139" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1616134586393" />
-    <state x="527" y="174" key="AndroidCreateXmlResourceDialog" timestamp="1608627249574">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="527" y="174" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1608627249574" />
-    <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1613371718335">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613371718335" />
     <state width="227" height="296" key="Git.Branch.Popup" timestamp="1614415417520">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -784,10 +780,6 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="406" y="155" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1616139327875" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1613373896213">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1613373896213" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1616086943715">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
