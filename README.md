@@ -12,8 +12,10 @@ Android Jetpack
 
 
 ## Screenshots
+<p float="left>
 <img src="screenshots/1.png" alt="drawing" width="200"/>
 <img src="screenshots/2.png" alt="drawing" width="200"/>
 <img src="screenshots/3.png" alt="drawing" width="200"/>
+</p>
 
   
