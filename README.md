@@ -13,7 +13,7 @@ Android Jetpack
 
 ## Screenshots
 <img src="screenshots/1.png" alt="drawing" width="200"/>
-![](screenshots/2.png)
-![](screenshots/3.png)
+<img src="screenshots/2.png" alt="drawing" width="200"/>
+<img src="screenshots/3.png" alt="drawing" width="200"/>
 
   
