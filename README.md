@@ -13,7 +13,7 @@ Android Jetpack
 
 ## Screenshots
 
-![](screenshots/1.png)
+![](screenshots/1.png =100x20)
 ![](screenshots/2.png)
 ![](screenshots/3.png)
 
