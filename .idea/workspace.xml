@@ -36,14 +36,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e110b2-58d9-4459-8194-303445fa0a9b" name="Default Changelist" comment="updating readme images">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[A7PRO205043932]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -301,27 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600236527648</updated>
-    </task>
-    <task id="LOCAL-00008" summary="polishing the ui">
-      <created>1608635353587</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1608635353587</updated>
-    </task>
-    <task id="LOCAL-00009" summary="change image configuration">
-      <created>1613151573244</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1613151573245</updated>
-    </task>
-    <task id="LOCAL-00010" summary="optimize images">
-      <created>1613152871191</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1613152871191</updated>
     </task>
     <task id="LOCAL-00011" summary="add episodes">
       <created>1613153649154</created>
@@ -645,7 +624,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622278613150</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="updating readme images">
+      <created>1622278721820</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1622278721820</updated>
+    </task>
+    <task id="LOCAL-00058" summary="updating readme images">
+      <created>1622278780324</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1622278780324</updated>
+    </task>
+    <task id="LOCAL-00059" summary="updating readme images">
+      <created>1622278838664</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1622278838665</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
